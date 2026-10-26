@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#080c14] text-slate-100 font-sans;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d131f;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Glassmorphism panel */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+  }
+}
+
+/* Animation utility classes */
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.04) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Smooth focus transitions */
+input:focus,
+textarea:focus,
+select:focus {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover card lift effect */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Text selection color */
+::selection {
+  background: rgba(16, 185, 129, 0.3);
+  color: #e2e8f0;
+}
+
+/* Risk level gradient borders */
+.risk-critical {
+  border-image: linear-gradient(135deg, #f43f5e, #e11d48) 1;
+}
+.risk-high {
+  border-image: linear-gradient(135deg, #f97316, #ea580c) 1;
+}
+.risk-medium {
+  border-image: linear-gradient(135deg, #f59e0b, #d97706) 1;
+}
+.risk-low {
+  border-image: linear-gradient(135deg, #10b981, #059669) 1;
+}

@@ -1,0 +1,358 @@
+test_id,contract_id,question,config_name,answer_text,evidence_status,expected_evidence_status,total_citations,valid_citations,citation_validity_score,expected_keywords,matched_keywords,faithfulness_score,is_abstention_case,system_abstained,abstention_correct,is_conflict_case,system_detected_conflict,conflict_detection_correct,expected_risk_level,predicted_risk_level,risk_level_correct,generation_latency_ms,total_latency_ms,prompt_tokens,completion_tokens,total_tokens
+TERM-001,eval_acme_beta_001,What is the notice period required for termination for convenience?,improved,"Based on contract evidence: Either party may terminate for convenience upon 90 days prior written notice (Section 8.1). -  performed in a professional manner consistent
+with generally accepted industry standards.
+
+Section 8 — Termination
+8.1 Termination for Convenience. Either party may terminate this Agreement for
+convenience upon ninety (90) days prior written notice to the other party.
+8.2 Termin... - under this Agreement during the twelve (12)
+months preceding the event giving rise to the claim.
+
+Section 11 — Limitation of Liability
+11.1 Aggregate Cap. EXCEPT FOR OBLIGATIONS ARISING UNDER SECTIONS 10
+(INDEMNIFICATION) AND 12 (CONFIDENTIALITY), EACH PARTY'S TOTAL AGGREGATE
+LIA...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""ninety"", ""90"", ""days"", ""written notice""]","[""ninety"", ""90"", ""days"", ""written notice""]",1.0,False,False,True,False,False,True,,,True,0.09060000002136803,0.7301000000552449,370,172,542
+TERM-002,eval_acme_beta_001,How long does the breaching party have to cure a material breach before termination?,improved,"Based on contract evidence: The breaching party has 30 days to cure a material breach after receiving written notice (Section 8.2). -  performed in a professional manner consistent
+with generally accepted industry standards.
+
+Section 8 — Termination
+8.1 Termination for Convenience. Either party may terminate this Agreement for
+convenience upon ninety (90) days prior written notice to the other party.
+8.2 Termin... -  to conflict-of-laws principles.
+16.2 Dispute Resolution. The parties agree to attempt good-faith negotiation for thirty
+(30) days. If unresolved, disputes shall be submitted to binding commercial arbitration
+administered by the American Arbitration Association (AAA) in Wilmingto...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""thirty"", ""30"", ""days"", ""cure""]","[""thirty"", ""30"", ""days"", ""cure""]",1.0,False,False,True,False,True,False,,,True,0.027899999849978485,0.4826999997931125,374,175,549
+TERM-003,eval_omega_sigma_002,Can the licensee terminate early for cause?,improved,"Based on contract evidence: Licensee may only terminate at the end of the current term with 60 days notice. There is no cure period and no mid-term termination right for Licensee. -  by Licensee. Licensee may terminate only at the end of the then-current
+Licence Term by providing sixty (60) days prior written notice.
+6.3 No Cure Period. Licensor's right to terminate for breach is immediate and does not
+require a cure period.
+
+Section 7 — Indemnification
+7.1 ... - n annual licence fee of $120,000 USD.
+3.2 Payment Due Date. The full annual fee is due within fifteen (15) days of the
+Effective Date and each anniversary thereafter.
+3.3 No Refunds. All fees paid are non-refundable under any circumstances.
+
+Section 4 — Restrictions
+Licensee shal...",SUFFICIENT,SUFFICIENT,4,4,1.0,"[""end of"", ""term"", ""sixty"", ""60""]","[""end of"", ""term"", ""sixty"", ""60""]",1.0,False,False,True,False,False,True,HIGH,HIGH,True,0.02380000000812288,0.37190000011833035,293,187,480
+TERM-004,eval_delta_epsilon_003,Is there a cure period for the employee bond termination?,improved,"Based on contract evidence: There is a 90-day notice period (Clause 4.1) but no cure period for breach. - ial Intelligence division, commencing from July 1, 2025.
+
+Clause 2 — Training Period
+The Company shall provide the Employee with intensive training on proprietary AI/ML
+systems during the first six (6) months of employment at an estimated training cost
+of ₹4,50,000 (Rupees Four L... - EMPLOYMENT BOND AGREEMENT
+
+This Employment Bond Agreement (""Bond"") is executed on June 10, 2025,
+by and between Delta Technologies Pvt. Ltd., a company incorporated under the
+Companies Act, 2013, having its registered office in Pune, Maharashtra (""Company""),
+and Mr. Arjun Sharma,...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""ninety"", ""90"", ""notice""]","[""90"", ""notice""]",0.6666666666666666,False,False,True,False,False,True,,,True,0.025000000050567905,0.3684000000703236,368,168,536
+TERM-005,eval_greenleaf_terra_004,What is the termination notice period in this supply agreement?,improved,"Conflicting provisions identified: Conflicting: Section 7.1 says 30 days, but Section 12.1 (amendment) extends it to 180 days.. Evidence:  Overdue Amounts. Overdue amounts accrue interest at 3% per annum
+above the Bank of England base rate.
+
+Section 12 — Exit Provisions
+NOTICE: THE FOLLOWING EXIT PROVISIONS WERE ADDED BY AMENDMENT AND
+SUPPLEMENT SECTION 7.
+12.1 Termination Notice Period. Notwithstanding Section 7.1...  arbitration under the LCIA Rules in London.
+
+Section 14 — Entire Agreement
+This Agreement, as amended, constitutes the entire agreement between the parties.
+
+IN WITNESS WHEREOF:
+
+GreenLeaf Organics PLC               TerraCo Agricultural Supplies Ltd.
+By: ___________________     ...",CONFLICTING,CONFLICTING,4,4,1.0,"[""thirty"", ""30"", ""one hundred and eighty"", ""180""]","[""30"", ""180""]",0.5,False,False,True,True,True,True,,,True,0.02220000010311196,0.4043999999794323,298,176,474
+TERM-006,eval_novahealth_medicore_005,What happens after termination of the DPA?,improved,"Based on contract evidence: Processor must return or securely delete all Personal Data within 45 days using NIST SP 800-88 methods (Article 10.3). - ossly
+negligent data breaches are not subject to the cap in Article 9.
+
+Article 9 — Limitation of Liability
+9.1 Aggregate Cap. Subject to Article 8.2, each party's total aggregate liability
+shall not exceed €1,500,000 or the total fees paid during the preceding twenty-four
+(24) m... - solution
+12.1 This DPA is governed by the laws of Ireland.
+12.2 Disputes shall first be escalated to senior executives for good-faith resolution
+over thirty (30) days. Unresolved disputes shall be submitted to the courts of Dublin.
+
+Article 13 — Miscellaneous
+This DPA supplements...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""return"", ""delete"", ""forty-five"", ""45"", ""days""]","[""return"", ""delete"", ""45"", ""days""]",0.8,False,False,True,False,False,True,,,True,0.02499999982319423,0.3518999999414518,364,179,543
+INDEM-001,eval_acme_beta_001,Is indemnification mutual or one-sided in the ACME-BetaCorp agreement?,improved,"Based on contract evidence: Mutual. Provider indemnifies Client for negligence/IP infringement; Client indemnifies Provider for misuse of deliverables (Section 10). - al term is twenty-four (24) months from the Effective Date.
+3.2 Renewal. This Agreement shall automatically renew for successive twelve (12)
+month periods unless either party provides written notice of non-renewal at least
+sixty (60) days prior to the expiration of the then-curre... - under this Agreement during the twelve (12)
+months preceding the event giving rise to the claim.
+
+Section 11 — Limitation of Liability
+11.1 Aggregate Cap. EXCEPT FOR OBLIGATIONS ARISING UNDER SECTIONS 10
+(INDEMNIFICATION) AND 12 (CONFIDENTIALITY), EACH PARTY'S TOTAL AGGREGATE
+LIA...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""mutual"", ""provider"", ""client""]","[""mutual"", ""provider"", ""client""]",1.0,False,False,True,False,False,True,,,True,0.02369999992879457,0.39059999994606187,371,184,555
+INDEM-002,eval_omega_sigma_002,Does the Omega Software Licence include a mutual indemnification clause?,improved,"Based on contract evidence: No. Only Licensee indemnifies Licensor (Section 7.1). Licensor has no indemnification obligation (Section 7.2). - SOFTWARE LICENCE AGREEMENT
+
+This Software Licence Agreement (""Agreement"") is entered into as of March 1, 2025,
+by and between Omega Systems Inc., a New York corporation (""Licensor""),
+and Sigma Analytics Ltd., a UK limited company (""Licensee"").
+
+Section 1 — Grant of Licence
+Licens... - ion 8 — Confidentiality
+8.1 Each party agrees to keep confidential all non-public information received from
+the other party during the term of this Agreement.
+8.2 Survival. Confidentiality obligations survive termination for two (2) years.
+
+Section 9 — Warranty Disclaimer
+THE SOF...",SUFFICIENT,SUFFICIENT,4,4,1.0,"[""one-sided"", ""licensee"", ""no licensor""]","[""licensee""]",0.3333333333333333,False,False,True,False,False,True,HIGH,HIGH,True,0.02220000010311196,0.3595000000586879,301,177,478
+INDEM-003,eval_acme_beta_001,Is there an indemnification cap in the ACME-BetaCorp MSA?,improved,"Based on contract evidence: Yes. Each party's aggregate indemnification is capped at fees paid in the preceding 12 months (Section 10.3). - e
+Neither party shall be liable for delays caused by events beyond its reasonable control.
+
+Section 10 — Indemnification
+10.1 Provider Indemnification. Provider shall indemnify, defend, and hold harmless
+Client against all third-party claims arising from Provider's gross negligen... - MASTER SERVICES AGREEMENT
+
+This Master Services Agreement (""Agreement"") is entered into as of January 15, 2025,
+by and between ACME Corporation, a Delaware corporation (""Client""),
+and BetaCorp Solutions LLC, a California limited liability company (""Provider"").
+
+Section 1 — Scope ...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""twelve"", ""12"", ""months"", ""fees""]","[""12"", ""months"", ""fees""]",0.75,False,False,True,False,False,True,,,True,0.019599999859565287,0.320099999953527,368,177,545
+INDEM-004,eval_novahealth_medicore_005,Are data breach indemnification obligations capped in the DPA?,improved,"Based on contract evidence: No — wilful or grossly negligent data breaches are explicitly uncapped (Article 8.2), overriding the general cap in Article 9. - nfidentiality obligations survive termination of this DPA indefinitely for
+health data and Special Category Data.
+
+Article 7 — Audit Rights
+7.1 Controller shall have the right to audit Processor's compliance with this DPA,
+upon reasonable notice, no more than twice per calendar y... - ossly
+negligent data breaches are not subject to the cap in Article 9.
+
+Article 9 — Limitation of Liability
+9.1 Aggregate Cap. Subject to Article 8.2, each party's total aggregate liability
+shall not exceed €1,500,000 or the total fees paid during the preceding twenty-four
+(24) m...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""uncapped"", ""wilful"", ""gross""]","[""uncapped"", ""wilful"", ""gross""]",1.0,False,False,True,False,False,True,,,True,0.022199999875738285,0.36769999996977276,369,181,550
+INDEM-005,eval_delta_epsilon_003,Does the employment bond include indemnification provisions?,improved,The agreement does not contain provisions concerning indemnification or this topic. No indemnification provisions exist in the employment bond agreement.,INSUFFICIENT,INSUFFICIENT,0,0,1.0,"[""no"", ""absent"", ""not"", ""indemnif""]","[""no"", ""not"", ""indemnif""]",0.75,True,True,True,False,False,True,,,True,0.017500000012660166,1.1846999998397223,368,38,406
+LIAB-001,eval_acme_beta_001,What is the aggregate liability cap in the ACME-BetaCorp MSA?,improved,"Based on contract evidence: Total aggregate liability is capped at fees paid in the preceding 12 months (Section 11.1), with carve-outs for Sections 10 and 12. - under this Agreement during the twelve (12)
+months preceding the event giving rise to the claim.
+
+Section 11 — Limitation of Liability
+11.1 Aggregate Cap. EXCEPT FOR OBLIGATIONS ARISING UNDER SECTIONS 10
+(INDEMNIFICATION) AND 12 (CONFIDENTIALITY), EACH PARTY'S TOTAL AGGREGATE
+LIA... -  to conflict-of-laws principles.
+16.2 Dispute Resolution. The parties agree to attempt good-faith negotiation for thirty
+(30) days. If unresolved, disputes shall be submitted to binding commercial arbitration
+administered by the American Arbitration Association (AAA) in Wilmingto...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""twelve"", ""12"", ""months"", ""fees""]","[""twelve"", ""12"", ""months"", ""fees""]",1.0,False,False,True,False,True,False,,,True,0.025100000129896216,0.41910000004463654,369,182,551
+LIAB-002,eval_acme_beta_001,Are consequential damages excluded in the MSA?,improved,"Based on contract evidence: Yes. Section 11.2 mutually excludes indirect, incidental, special, consequential, and punitive damages. -  to conflict-of-laws principles.
+16.2 Dispute Resolution. The parties agree to attempt good-faith negotiation for thirty
+(30) days. If unresolved, disputes shall be submitted to binding commercial arbitration
+administered by the American Arbitration Association (AAA) in Wilmingto... - al term is twenty-four (24) months from the Effective Date.
+3.2 Renewal. This Agreement shall automatically renew for successive twelve (12)
+month periods unless either party provides written notice of non-renewal at least
+sixty (60) days prior to the expiration of the then-curre...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""consequential"", ""indirect"", ""excluded"", ""waiv""]","[""consequential"", ""indirect""]",0.5,False,False,True,False,True,False,,,True,0.018799999907059828,0.31309999985751347,365,175,540
+LIAB-003,eval_omega_sigma_002,Does the Omega licence agreement contain a limitation of liability?,improved,"The agreement does not contain provisions concerning liability limits or this topic. No. The Omega licence contains no limitation of liability clause, creating uncapped exposure.",INSUFFICIENT,INSUFFICIENT,0,0,1.0,"[""no"", ""absent"", ""missing"", ""limitation of liability""]","[""no"", ""limitation of liability""]",0.5,True,True,True,False,False,True,CRITICAL,CRITICAL,True,0.010400000064691994,0.2971999999772379,370,44,414
+LIAB-004,eval_novahealth_medicore_005,What is the liability cap in the DPA?,improved,"Based on contract evidence: €1,500,000 or total fees paid in the preceding 24 months, whichever is greater (Article 9.1). - ossly
+negligent data breaches are not subject to the cap in Article 9.
+
+Article 9 — Limitation of Liability
+9.1 Aggregate Cap. Subject to Article 8.2, each party's total aggregate liability
+shall not exceed €1,500,000 or the total fees paid during the preceding twenty-four
+(24) m... - sary to perform the services.
+4.3 Sub-processors. Processor shall not engage any sub-processor without prior
+specific written authorisation from Controller. A list of approved sub-processors
+is attached as Annex B.
+4.4 Cross-border Transfers. Any transfer of Personal Data outside...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""1,500,000"", ""\u20ac1,500,000"", ""twenty-four"", ""24"", ""months""]","[""1,500,000"", ""\u20ac1,500,000"", ""twenty-four"", ""24"", ""months""]",1.0,False,False,True,False,False,True,,,True,0.01950000000761065,0.28589999988071213,363,173,536
+LIAB-005,eval_greenleaf_terra_004,What is the supply agreement's liability cap duration basis?,improved,"Based on contract evidence: Total fees paid during the preceding 6 months (Section 10.1). - SUPPLY AGREEMENT
+
+This Supply Agreement (""Agreement"") is made on August 20, 2025,
+BETWEEN: GreenLeaf Organics PLC, registered in England (""Buyer""),
+AND: TerraCo Agricultural Supplies Ltd., registered in Wales (""Supplier"").
+
+Section 1 — Supply Obligations
+Supplier shall deliver or... - Each party indemnifies the other for claims arising from its negligence.
+
+Section 10 — Liability
+10.1 Liability Cap. Each party's total aggregate liability under this Agreement shall
+not exceed the total fees paid during the preceding six (6) months.
+10.2 Exclusion. Neither party...",SUFFICIENT,SUFFICIENT,4,4,1.0,"[""six"", ""6"", ""months""]","[""six"", ""6"", ""months""]",1.0,False,False,True,False,False,True,,,True,0.017800000023271423,0.2921000000242202,298,165,463
+RENEW-001,eval_acme_beta_001,Does the ACME-BetaCorp MSA auto-renew?,improved,"Based on contract evidence: Yes. Auto-renews for 12-month periods unless 60 days notice of non-renewal is given (Section 3.2). -  to conflict-of-laws principles.
+16.2 Dispute Resolution. The parties agree to attempt good-faith negotiation for thirty
+(30) days. If unresolved, disputes shall be submitted to binding commercial arbitration
+administered by the American Arbitration Association (AAA) in Wilmingto... - e
+Neither party shall be liable for delays caused by events beyond its reasonable control.
+
+Section 10 — Indemnification
+10.1 Provider Indemnification. Provider shall indemnify, defend, and hold harmless
+Client against all third-party claims arising from Provider's gross negligen...",SUFFICIENT,SUFFICIENT,4,4,1.0,"[""automatically"", ""renew"", ""twelve"", ""12"", ""sixty"", ""60""]","[""renew"", ""12"", ""60""]",0.5,False,False,True,False,True,False,,,True,0.03779999997277628,0.5232000000887638,292,174,466
+RENEW-002,eval_omega_sigma_002,Does the Omega licence auto-renew?,improved,"Based on contract evidence: No. The agreement expires at the end of the 12-month term without automatic renewal (Section 2). - SOFTWARE LICENCE AGREEMENT
+
+This Software Licence Agreement (""Agreement"") is entered into as of March 1, 2025,
+by and between Omega Systems Inc., a New York corporation (""Licensor""),
+and Sigma Analytics Ltd., a UK limited company (""Licensee"").
+
+Section 1 — Grant of Licence
+Licens... - ion 8 — Confidentiality
+8.1 Each party agrees to keep confidential all non-public information received from
+the other party during the term of this Agreement.
+8.2 Survival. Confidentiality obligations survive termination for two (2) years.
+
+Section 9 — Warranty Disclaimer
+THE SOF...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""no"", ""expires"", ""without"", ""automatic""]","[""no"", ""expires"", ""without"", ""automatic""]",1.0,False,False,True,False,False,True,,,True,0.019300000076327706,0.27890000001207227,362,174,536
+RENEW-003,eval_delta_epsilon_003,Is there an automatic renewal clause in the employment bond?,improved,The agreement does not contain provisions concerning automatic renewal or this topic. No automatic renewal clause exists in the employment bond.,INSUFFICIENT,INSUFFICIENT,0,0,1.0,"[""no"", ""absent"", ""not""]","[""no"", ""not""]",0.6666666666666666,True,True,True,False,False,True,,,True,0.010400000064691994,0.29289999997672567,368,36,404
+RENEW-004,eval_novahealth_medicore_005,Does the DPA auto-renew or expire with the underlying services agreement?,improved,"Based on contract evidence: The DPA remains in effect for the duration of the underlying EHR services agreement (Article 10.1). - ossly
+negligent data breaches are not subject to the cap in Article 9.
+
+Article 9 — Limitation of Liability
+9.1 Aggregate Cap. Subject to Article 8.2, each party's total aggregate liability
+shall not exceed €1,500,000 or the total fees paid during the preceding twenty-four
+(24) m... - solution
+12.1 This DPA is governed by the laws of Ireland.
+12.2 Disputes shall first be escalated to senior executives for good-faith resolution
+over thirty (30) days. Unresolved disputes shall be submitted to the courts of Dublin.
+
+Article 13 — Miscellaneous
+This DPA supplements...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""duration"", ""underlying"", ""services""]","[""duration"", ""underlying"", ""services""]",1.0,False,False,True,False,False,True,,,True,0.01849999989644857,0.30420000007325143,372,174,546
+PAY-001,eval_acme_beta_001,What are the payment terms in the ACME-BetaCorp MSA?,improved,"Based on contract evidence: Net 30 — invoices are due within 30 days. Late payments accrue 1.5% monthly interest (Section 5). -  to conflict-of-laws principles.
+16.2 Dispute Resolution. The parties agree to attempt good-faith negotiation for thirty
+(30) days. If unresolved, disputes shall be submitted to binding commercial arbitration
+administered by the American Arbitration Association (AAA) in Wilmingto... - al term is twenty-four (24) months from the Effective Date.
+3.2 Renewal. This Agreement shall automatically renew for successive twelve (12)
+month periods unless either party provides written notice of non-renewal at least
+sixty (60) days prior to the expiration of the then-curre...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""thirty"", ""30"", ""Net 30""]","[""thirty"", ""30"", ""Net 30""]",1.0,False,False,True,False,True,False,,,True,0.019600000086938962,0.3070000000207074,366,174,540
+PAY-002,eval_delta_epsilon_003,What is the bond penalty amount in the employment agreement?,improved,"Based on contract evidence: ₹2,00,000 (Rupees Two Lakhs) as liquidated damages, reduced pro-rata for completed months (Clause 3.2-3.3). - EMPLOYMENT BOND AGREEMENT
+
+This Employment Bond Agreement (""Bond"") is executed on June 10, 2025,
+by and between Delta Technologies Pvt. Ltd., a company incorporated under the
+Companies Act, 2013, having its registered office in Pune, Maharashtra (""Company""),
+and Mr. Arjun Sharma,... - ,000 (Rupees Two Lakhs) as liquidated damages representing a reasonable
+pre-estimate of the Company's training investment loss.
+3.3 Pro-rata Reduction. The bond penalty shall be reduced pro-rata for each completed
+month of service after the training period.
+
+Clause 4 — Early Exit...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""2,00,000"", ""two lakhs"", ""\u20b92,00,000"", ""200000"", ""Two Lakhs""]","[""2,00,000"", ""two lakhs"", ""\u20b92,00,000"", ""Two Lakhs""]",0.8,False,False,True,False,False,True,,,True,0.019300000076327706,0.31160000003183086,368,176,544
+PAY-003,eval_greenleaf_terra_004,What are the payment terms for the supply agreement?,improved,"Conflicting provisions identified: Conflicting: Section 4 specifies Net 45, but Section 11.1 (amendment) specifies Net 90 for orders exceeding £50,000.. Evidence: Each party indemnifies the other for claims arising from its negligence.
+
+Section 10 — Liability
+10.1 Liability Cap. Each party's total aggregate liability under this Agreement shall
+not exceed the total fees paid during the preceding six (6) months.
+10.2 Exclusion. Neither party...  Overdue Amounts. Overdue amounts accrue interest at 3% per annum
+above the Bank of England base rate.
+
+Section 12 — Exit Provisions
+NOTICE: THE FOLLOWING EXIT PROVISIONS WERE ADDED BY AMENDMENT AND
+SUPPLEMENT SECTION 7.
+12.1 Termination Notice Period. Notwithstanding Section 7.1...",CONFLICTING,CONFLICTING,5,5,1.0,"[""forty-five"", ""45"", ""ninety"", ""90""]","[""45"", ""90""]",0.5,False,False,True,True,True,True,,,True,0.019899999870176543,0.3309999999601132,366,182,548
+PAY-004,eval_omega_sigma_002,Are the Omega licence fees refundable?,improved,"Based on contract evidence: No. All fees paid are non-refundable under any circumstances (Section 3.3). - SOFTWARE LICENCE AGREEMENT
+
+This Software Licence Agreement (""Agreement"") is entered into as of March 1, 2025,
+by and between Omega Systems Inc., a New York corporation (""Licensor""),
+and Sigma Analytics Ltd., a UK limited company (""Licensee"").
+
+Section 1 — Grant of Licence
+Licens... - ion 8 — Confidentiality
+8.1 Each party agrees to keep confidential all non-public information received from
+the other party during the term of this Agreement.
+8.2 Survival. Confidentiality obligations survive termination for two (2) years.
+
+Section 9 — Warranty Disclaimer
+THE SOF...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""non-refundable"", ""no"", ""refund""]","[""non-refundable"", ""no"", ""refund""]",1.0,False,False,True,False,False,True,,,True,0.01889999998638814,0.28150000002824527,363,168,531
+PAY-005,eval_novahealth_medicore_005,How much is the monthly processing fee in the DPA?,improved,"Based on contract evidence: €25,000 per month for hosting up to 500,000 patient records (Article 3.1). - ossly
+negligent data breaches are not subject to the cap in Article 9.
+
+Article 9 — Limitation of Liability
+9.1 Aggregate Cap. Subject to Article 8.2, each party's total aggregate liability
+shall not exceed €1,500,000 or the total fees paid during the preceding twenty-four
+(24) m... - ta, genetic data, and biometric data.
+
+Article 3 — Fees
+3.1 Processing Fees. Controller shall pay Processor a monthly processing fee of
+€25,000 for hosting and managing up to 500,000 patient records.
+3.2 Invoicing. Processor shall issue invoices on the first business day of each
+...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""\u20ac25,000"", ""25,000""]","[""\u20ac25,000"", ""25,000""]",1.0,False,False,True,False,False,True,,,True,0.018699999827731517,0.5255999999462801,366,168,534
+MISS-001,eval_omega_sigma_002,What are the limitation of liability terms in the Omega licence?,improved,The agreement does not contain provisions concerning liability limits or this topic. No limitation of liability clause exists in the Omega licence agreement.,INSUFFICIENT,INSUFFICIENT,0,0,1.0,"[""no"", ""absent"", ""missing"", ""not""]","[""no"", ""not""]",0.5,True,True,True,False,False,True,CRITICAL,CRITICAL,True,0.011900000117748277,0.29400000016721606,369,39,408
+MISS-002,eval_omega_sigma_002,What data protection provisions does the Omega licence include?,improved,"The agreement does not contain provisions concerning data protection or this topic. No data protection, GDPR, or CCPA provisions exist in the Omega licence.",INSUFFICIENT,INSUFFICIENT,0,0,1.0,"[""no"", ""absent"", ""missing"", ""not"", ""data protection""]","[""no"", ""not"", ""data protection""]",0.6,True,True,True,False,False,True,HIGH,HIGH,True,0.01049999991664663,0.317499999937354,228,39,267
+MISS-003,eval_delta_epsilon_003,Is there an indemnification clause in the employment bond?,improved,The agreement does not contain provisions concerning indemnification or this topic. The employment bond does not include any indemnification provisions.,INSUFFICIENT,INSUFFICIENT,0,0,1.0,"[""no"", ""absent"", ""not"", ""indemnif""]","[""no"", ""not"", ""indemnif""]",0.75,True,True,True,False,False,True,LOW,LOW,True,0.011100000165242818,0.31930000000102154,368,38,406
+MISS-004,eval_greenleaf_terra_004,Does the supply agreement include data protection terms?,improved,The agreement does not contain provisions concerning data protection or this topic. The supply agreement does not include data protection or privacy provisions.,INSUFFICIENT,INSUFFICIENT,0,0,1.0,"[""no"", ""absent"", ""missing"", ""not"", ""data protection""]","[""no"", ""not"", ""data protection""]",0.6,True,True,True,False,False,True,MEDIUM,MEDIUM,True,0.01059999999597494,0.2784999999221327,226,40,266
+MISS-005,eval_delta_epsilon_003,Does the employment bond have an automatic renewal clause?,improved,The agreement does not contain provisions concerning automatic renewal or this topic. No automatic renewal clause exists. The bond covers a fixed lock-in period.,INSUFFICIENT,INSUFFICIENT,0,0,1.0,"[""no"", ""absent"", ""not"", ""renewal""]","[""no"", ""not"", ""renewal""]",0.75,True,True,True,False,False,True,LOW,LOW,True,0.014299999975264654,0.45290000002751185,368,40,408
+CONF-001,eval_greenleaf_terra_004,What is the termination notice period in the supply agreement?,improved,"Conflicting provisions identified: Conflicting provisions: Section 7.1 requires 30 days notice; Section 12.1 (amendment) requires 180 days.. Evidence:  Overdue Amounts. Overdue amounts accrue interest at 3% per annum
+above the Bank of England base rate.
+
+Section 12 — Exit Provisions
+NOTICE: THE FOLLOWING EXIT PROVISIONS WERE ADDED BY AMENDMENT AND
+SUPPLEMENT SECTION 7.
+12.1 Termination Notice Period. Notwithstanding Section 7.1...  arbitration under the LCIA Rules in London.
+
+Section 14 — Entire Agreement
+This Agreement, as amended, constitutes the entire agreement between the parties.
+
+IN WITNESS WHEREOF:
+
+GreenLeaf Organics PLC               TerraCo Agricultural Supplies Ltd.
+By: ___________________     ...",CONFLICTING,CONFLICTING,5,5,1.0,"[""thirty"", ""30"", ""one hundred and eighty"", ""180"", ""conflict""]","[""30"", ""180"", ""conflict""]",0.6,False,False,True,True,True,True,HIGH,LOW,False,0.025299999833805487,0.3435999999510386,369,179,548
+CONF-002,eval_greenleaf_terra_004,How many days does the buyer have to pay invoices in the supply agreement?,improved,"Conflicting provisions identified: Conflicting: Net 45 standard (Section 4.1) vs. Net 90 for orders over £50,000 (Section 11.1 amendment).. Evidence: SUPPLY AGREEMENT
+
+This Supply Agreement (""Agreement"") is made on August 20, 2025,
+BETWEEN: GreenLeaf Organics PLC, registered in England (""Buyer""),
+AND: TerraCo Agricultural Supplies Ltd., registered in Wales (""Supplier"").
+
+Section 1 — Supply Obligations
+Supplier shall deliver or...  arbitration under the LCIA Rules in London.
+
+Section 14 — Entire Agreement
+This Agreement, as amended, constitutes the entire agreement between the parties.
+
+IN WITNESS WHEREOF:
+
+GreenLeaf Organics PLC               TerraCo Agricultural Supplies Ltd.
+By: ___________________     ...",CONFLICTING,CONFLICTING,5,5,1.0,"[""forty-five"", ""45"", ""ninety"", ""90""]","[""45"", ""90""]",0.5,False,False,True,True,True,True,MEDIUM,MEDIUM,True,0.025000000050567905,0.4946999999901891,372,179,551
+CONF-003,eval_greenleaf_terra_004,Are there any conflicting provisions in the GreenLeaf–TerraCo agreement?,improved,"Conflicting provisions identified: Yes. Sections 11 and 12 (amendments) create conflicts with Sections 4 and 7 on payment and termination terms.. Evidence:  Overdue Amounts. Overdue amounts accrue interest at 3% per annum
+above the Bank of England base rate.
+
+Section 12 — Exit Provisions
+NOTICE: THE FOLLOWING EXIT PROVISIONS WERE ADDED BY AMENDMENT AND
+SUPPLEMENT SECTION 7.
+12.1 Termination Notice Period. Notwithstanding Section 7.1...  arbitration under the LCIA Rules in London.
+
+Section 14 — Entire Agreement
+This Agreement, as amended, constitutes the entire agreement between the parties.
+
+IN WITNESS WHEREOF:
+
+GreenLeaf Organics PLC               TerraCo Agricultural Supplies Ltd.
+By: ___________________     ...",CONFLICTING,CONFLICTING,4,4,1.0,"[""conflict"", ""amendment"", ""notwithstanding""]","[""conflict"", ""amendment"", ""notwithstanding""]",1.0,False,False,True,True,True,True,HIGH,LOW,False,0.025000000050567905,0.4386000000522472,301,180,481
+CONF-004,eval_greenleaf_terra_004,Can the Buyer terminate the supply agreement with just 30 days notice?,improved,"Conflicting provisions identified: Unclear. Section 7.1 says 30 days, but the later amendment Section 12.1 says 180 days.. Evidence: SUPPLY AGREEMENT
+
+This Supply Agreement (""Agreement"") is made on August 20, 2025,
+BETWEEN: GreenLeaf Organics PLC, registered in England (""Buyer""),
+AND: TerraCo Agricultural Supplies Ltd., registered in Wales (""Supplier"").
+
+Section 1 — Supply Obligations
+Supplier shall deliver or...  arbitration under the LCIA Rules in London.
+
+Section 14 — Entire Agreement
+This Agreement, as amended, constitutes the entire agreement between the parties.
+
+IN WITNESS WHEREOF:
+
+GreenLeaf Organics PLC               TerraCo Agricultural Supplies Ltd.
+By: ___________________     ...",CONFLICTING,CONFLICTING,5,5,1.0,"[""30"", ""180"", ""conflict"", ""amendment""]","[""30"", ""180"", ""conflict"", ""amendment""]",1.0,False,False,True,True,True,True,HIGH,HIGH,True,0.028400000019246363,0.5481000000600034,371,175,546
+CONF-005,eval_greenleaf_terra_004,"What payment timeline applies to large orders over £50,000?",improved,"Based on contract evidence: Net 90 for orders exceeding £50,000 per Section 11.1 (amendment), superseding the standard Net 45. - urchase Order. Late deliveries exceeding ten (10) business
+days entitle Buyer to cancel the relevant Purchase Order.
+
+Section 4 — Payment
+4.1 Payment Terms. Buyer shall pay all undisputed invoices within forty-five (45) days
+of receipt of goods and a valid invoice (""Net 45"").
+4.2...",SUFFICIENT,SUFFICIENT,1,1,1.0,"[""ninety"", ""90"", ""Net 90""]","[""90"", ""Net 90""]",0.6666666666666666,False,False,True,False,False,True,,,True,0.014899999996487168,0.31420000004800386,85,103,188
+UNSUP-001,eval_acme_beta_001,What is the weather forecast for tomorrow in Delaware?,improved,The agreement does not contain provisions concerning unsupported or this topic. This question is outside the scope of the contract and cannot be answered from the agreement.,INSUFFICIENT,INSUFFICIENT,0,0,1.0,"[""not"", ""contract"", ""cannot"", ""outside""]","[""not"", ""contract"", ""cannot"", ""outside""]",1.0,True,True,True,False,False,True,,,True,0.015100000155143789,0.31840000019656145,367,43,410
+UNSUP-002,eval_acme_beta_001,What was ACME Corporation's stock price last quarter?,improved,The agreement does not contain provisions concerning unsupported or this topic. Stock price information is not available in the contract.,INSUFFICIENT,INSUFFICIENT,0,0,1.0,"[""not"", ""contract"", ""cannot"", ""insufficient""]","[""not"", ""contract""]",0.5,True,True,True,False,False,True,,,True,0.009900000122797792,0.27880000016011763,13,34,47
+UNSUP-003,eval_acme_beta_001,Please draft a counter-proposal for Section 8 termination rights.,improved,"Based on contract evidence: The system can reference Section 8 content but counter-proposals require professional legal drafting. -  performed in a professional manner consistent
+with generally accepted industry standards.
+
+Section 8 — Termination
+8.1 Termination for Convenience. Either party may terminate this Agreement for
+convenience upon ninety (90) days prior written notice to the other party.
+8.2 Termin... - .3 Late Payment. Overdue undisputed amounts shall accrue interest at the lesser of
+one and one-half percent (1.5%) per month or the maximum rate permitted by law.
+5.4 Disputed Invoices. Client shall notify Provider of any disputed invoice line items
+within fifteen (15) days of re...",SUFFICIENT,SUFFICIENT,3,3,1.0,"[""Section 8"", ""terminat""]","[""Section 8"", ""terminat""]",1.0,False,False,True,False,False,True,,,True,0.023199999986900366,0.555800000029194,228,175,403
+UNSUP-004,eval_acme_beta_001,Who is the CEO of BetaCorp Solutions?,improved,"Based on contract evidence: Raj Patel, Managing Director, signed the agreement for BetaCorp Solutions LLC. - al term is twenty-four (24) months from the Effective Date.
+3.2 Renewal. This Agreement shall automatically renew for successive twelve (12)
+month periods unless either party provides written notice of non-renewal at least
+sixty (60) days prior to the expiration of the then-curre... - MASTER SERVICES AGREEMENT
+
+This Master Services Agreement (""Agreement"") is entered into as of January 15, 2025,
+by and between ACME Corporation, a Delaware corporation (""Client""),
+and BetaCorp Solutions LLC, a California limited liability company (""Provider"").
+
+Section 1 — Scope ...",SUFFICIENT,SUFFICIENT,5,5,1.0,"[""Raj Patel"", ""Managing Director""]","[""Raj Patel"", ""Managing Director""]",1.0,False,False,True,False,False,True,,,True,0.0227999998969608,0.36399999999048305,363,169,532
+UNSUP-005,eval_acme_beta_001,Explain quantum computing and how it relates to this contract.,improved,The agreement does not contain provisions concerning unsupported or this topic. Quantum computing is not referenced or relevant to this agreement.,INSUFFICIENT,INSUFFICIENT,0,0,1.0,"[""not"", ""contract"", ""insufficient"", ""quantum""]","[""not"", ""quantum""]",0.5,True,True,True,False,False,True,,,True,0.01420000012331002,0.35840000009557116,298,36,334

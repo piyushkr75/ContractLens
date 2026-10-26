@@ -1,0 +1,2843 @@
+{
+  "config_name": "improved",
+  "run_id": "7afe19ef",
+  "timestamp": "2026-10-26T18:05:00.930430+00:00",
+  "total_test_cases": 40,
+  "mean_recall_at_5": 0.70625,
+  "mean_mrr_at_5": 0.6333333333333333,
+  "mean_recall_at_5_targeted": 0.5803571428571429,
+  "mean_mrr_at_5_targeted": 0.4761904761904762,
+  "mean_retrieval_latency_ms": 0.7128149999914513,
+  "mean_citation_validity": 1.0,
+  "mean_faithfulness": 0.7808333333333334,
+  "abstention_accuracy": 1.0,
+  "conflict_detection_accuracy": 0.875,
+  "evidence_status_accuracy": 1.0,
+  "risk_level_accuracy": 0.8333333333333334,
+  "mean_generation_latency_ms": 0.021397500000830405,
+  "mean_total_latency_ms": 0.3943025000069156,
+  "total_prompt_tokens": 13158,
+  "total_completion_tokens": 5448,
+  "total_api_tokens": 18606,
+  "estimated_cost_usd": 0.003495,
+  "category_scores": {
+    "Automatic Renewal": {
+      "count": 5,
+      "mean_recall_at_5": 0.4,
+      "mean_mrr_at_5": 0.4,
+      "mean_faithfulness": 0.7833333333333333,
+      "mean_citation_validity": 1.0
+    },
+    "Data Protection": {
+      "count": 2,
+      "mean_recall_at_5": 1.0,
+      "mean_mrr_at_5": 1.0,
+      "mean_faithfulness": 0.6,
+      "mean_citation_validity": 1.0
+    },
+    "Indemnification": {
+      "count": 6,
+      "mean_recall_at_5": 0.9166666666666666,
+      "mean_mrr_at_5": 0.8055555555555555,
+      "mean_faithfulness": 0.7638888888888888,
+      "mean_citation_validity": 1.0
+    },
+    "Liability Limits": {
+      "count": 6,
+      "mean_recall_at_5": 1.0,
+      "mean_mrr_at_5": 0.8888888888888888,
+      "mean_faithfulness": 0.75,
+      "mean_citation_validity": 1.0
+    },
+    "Payment": {
+      "count": 7,
+      "mean_recall_at_5": 0.2857142857142857,
+      "mean_mrr_at_5": 0.2857142857142857,
+      "mean_faithfulness": 0.780952380952381,
+      "mean_citation_validity": 1.0
+    },
+    "Termination": {
+      "count": 9,
+      "mean_recall_at_5": 0.6388888888888888,
+      "mean_mrr_at_5": 0.462962962962963,
+      "mean_faithfulness": 0.8407407407407407,
+      "mean_citation_validity": 1.0
+    },
+    "Unsupported": {
+      "count": 5,
+      "mean_recall_at_5": 1.0,
+      "mean_mrr_at_5": 1.0,
+      "mean_faithfulness": 0.8,
+      "mean_citation_validity": 1.0
+    }
+  },
+  "retrieval_results": [
+    {
+      "test_id": "TERM-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "What is the notice period required for termination for convenience?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_003",
+        "eval_acme_beta_001_chunk_001",
+        "eval_acme_beta_001_chunk_005"
+      ],
+      "retrieved_sections": [
+        "Section 8 \u2014 Termination",
+        "Section 4 \u2014 Fees",
+        "Section 11 \u2014 Limitation of Liability"
+      ],
+      "retrieved_scores": [
+        0.4817,
+        0.2427,
+        0.1543
+      ],
+      "relevant_sections": [
+        "Section 8"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 1.2515000000803411
+    },
+    {
+      "test_id": "TERM-002",
+      "contract_id": "eval_acme_beta_001",
+      "question": "How long does the breaching party have to cure a material breach before termination?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_003",
+        "eval_acme_beta_001_chunk_006",
+        "eval_acme_beta_001_chunk_008",
+        "eval_acme_beta_001_chunk_005",
+        "eval_acme_beta_001_chunk_009"
+      ],
+      "retrieved_sections": [
+        "Section 8 \u2014 Termination",
+        "Section 13 \u2014 Insurance",
+        "Section 15 \u2014 Audit Rights",
+        "Section 11 \u2014 Limitation of Liability",
+        "Section 17 \u2014 Entire Agreement"
+      ],
+      "retrieved_scores": [
+        0.3272,
+        0.1824,
+        0.1774,
+        0.1637,
+        0.1568
+      ],
+      "relevant_sections": [
+        "Section 8"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 1.0032000000137486
+    },
+    {
+      "test_id": "TERM-003",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "Can the licensee terminate early for cause?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_omega_sigma_002_chunk_002",
+        "eval_omega_sigma_002_chunk_001",
+        "eval_omega_sigma_002_chunk_000"
+      ],
+      "retrieved_sections": [
+        "Section 7 \u2014 Indemnification",
+        "Section 4 \u2014 Restrictions",
+        "Section 1 \u2014 Grant of Licence"
+      ],
+      "retrieved_scores": [
+        0.3007,
+        0.224,
+        0.2147
+      ],
+      "relevant_sections": [
+        "Section 6"
+      ],
+      "recall_at_k": 0.0,
+      "mrr_at_k": 0.0,
+      "retrieval_latency_ms": 0.65960000006271
+    },
+    {
+      "test_id": "TERM-004",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "Is there a cure period for the employee bond termination?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_delta_epsilon_003_chunk_001",
+        "eval_delta_epsilon_003_chunk_002",
+        "eval_delta_epsilon_003_chunk_000",
+        "eval_delta_epsilon_003_chunk_004",
+        "eval_delta_epsilon_003_chunk_003"
+      ],
+      "retrieved_sections": [
+        "Clause 2 \u2014 Training Period",
+        "Clause 4 \u2014 Early Exit",
+        "Clause 1 \u2014 Employment",
+        "Clause 9 \u2014 Entire Agreement",
+        "Clause 6 \u2014 Confidentiality"
+      ],
+      "retrieved_scores": [
+        0.483,
+        0.2861,
+        0.2829,
+        0.2419,
+        0.232
+      ],
+      "relevant_sections": [
+        "Clause 4"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 0.5,
+      "retrieval_latency_ms": 0.6264999999530119
+    },
+    {
+      "test_id": "TERM-005",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "What is the termination notice period in this supply agreement?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_greenleaf_terra_004_chunk_000",
+        "eval_greenleaf_terra_004_chunk_005",
+        "eval_greenleaf_terra_004_chunk_004",
+        "eval_greenleaf_terra_004_chunk_002"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Supply Obligations",
+        "Section 14 \u2014 Entire Agreement",
+        "Section 12 \u2014 Exit Provisions",
+        "Section 7 \u2014 Termination"
+      ],
+      "retrieved_scores": [
+        0.3779,
+        0.3558,
+        0.3512,
+        0.31
+      ],
+      "relevant_sections": [
+        "Section 7",
+        "Section 12"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 0.3333333333333333,
+      "retrieval_latency_ms": 0.6425999999919441
+    },
+    {
+      "test_id": "TERM-006",
+      "contract_id": "eval_novahealth_medicore_005",
+      "question": "What happens after termination of the DPA?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_novahealth_medicore_005_chunk_004",
+        "eval_novahealth_medicore_005_chunk_007",
+        "eval_novahealth_medicore_005_chunk_000",
+        "eval_novahealth_medicore_005_chunk_006",
+        "eval_novahealth_medicore_005_chunk_005"
+      ],
+      "retrieved_sections": [
+        "Article 7 \u2014 Audit Rights",
+        "Article 13 \u2014 Miscellaneous",
+        "Article 1 \u2014 Purpose",
+        "Article 11 \u2014 Data Protection Impact Assessments",
+        "Article 9 \u2014 Limitation of Liability"
+      ],
+      "retrieved_scores": [
+        0.2406,
+        0.225,
+        0.2103,
+        0.1931,
+        0.1821
+      ],
+      "relevant_sections": [
+        "Article 10"
+      ],
+      "recall_at_k": 0.0,
+      "mrr_at_k": 0.0,
+      "retrieval_latency_ms": 0.6833999998434592
+    },
+    {
+      "test_id": "INDEM-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Is indemnification mutual or one-sided in the ACME-BetaCorp agreement?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_004",
+        "eval_acme_beta_001_chunk_005",
+        "eval_acme_beta_001_chunk_009",
+        "eval_acme_beta_001_chunk_000",
+        "eval_acme_beta_001_chunk_001"
+      ],
+      "retrieved_sections": [
+        "Section 10 \u2014 Indemnification",
+        "Section 11 \u2014 Limitation of Liability",
+        "Section 17 \u2014 Entire Agreement",
+        "Section 1 \u2014 Scope of Services",
+        "Section 4 \u2014 Fees"
+      ],
+      "retrieved_scores": [
+        0.3053,
+        0.2481,
+        0.2318,
+        0.2259,
+        0.215
+      ],
+      "relevant_sections": [
+        "Section 10"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.7901999999830878
+    },
+    {
+      "test_id": "INDEM-002",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "Does the Omega Software Licence include a mutual indemnification clause?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_omega_sigma_002_chunk_000",
+        "eval_omega_sigma_002_chunk_002",
+        "eval_omega_sigma_002_chunk_001"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Grant of Licence",
+        "Section 7 \u2014 Indemnification",
+        "Section 4 \u2014 Restrictions"
+      ],
+      "retrieved_scores": [
+        0.4989,
+        0.297,
+        0.1575
+      ],
+      "relevant_sections": [
+        "Section 7"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 0.5,
+      "retrieval_latency_ms": 0.5645999999615015
+    },
+    {
+      "test_id": "INDEM-003",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Is there an indemnification cap in the ACME-BetaCorp MSA?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_004",
+        "eval_acme_beta_001_chunk_000",
+        "eval_acme_beta_001_chunk_005"
+      ],
+      "retrieved_sections": [
+        "Section 10 \u2014 Indemnification",
+        "Section 1 \u2014 Scope of Services",
+        "Section 11 \u2014 Limitation of Liability"
+      ],
+      "retrieved_scores": [
+        0.2892,
+        0.2324,
+        0.2019
+      ],
+      "relevant_sections": [
+        "Section 10"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.6973000001835317
+    },
+    {
+      "test_id": "INDEM-004",
+      "contract_id": "eval_novahealth_medicore_005",
+      "question": "Are data breach indemnification obligations capped in the DPA?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_novahealth_medicore_005_chunk_006",
+        "eval_novahealth_medicore_005_chunk_004",
+        "eval_novahealth_medicore_005_chunk_005",
+        "eval_novahealth_medicore_005_chunk_003",
+        "eval_novahealth_medicore_005_chunk_001"
+      ],
+      "retrieved_sections": [
+        "Article 11 \u2014 Data Protection Impact Assessments",
+        "Article 7 \u2014 Audit Rights",
+        "Article 9 \u2014 Limitation of Liability",
+        "Article 6 \u2014 Confidentiality",
+        "Article 3 \u2014 Fees"
+      ],
+      "retrieved_scores": [
+        0.3831,
+        0.3457,
+        0.2691,
+        0.2368,
+        0.1944
+      ],
+      "relevant_sections": [
+        "Article 8",
+        "Article 9"
+      ],
+      "recall_at_k": 0.5,
+      "mrr_at_k": 0.3333333333333333,
+      "retrieval_latency_ms": 0.7044999999834545
+    },
+    {
+      "test_id": "INDEM-005",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "Does the employment bond include indemnification provisions?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_delta_epsilon_003_chunk_000",
+        "eval_delta_epsilon_003_chunk_001",
+        "eval_delta_epsilon_003_chunk_002",
+        "eval_delta_epsilon_003_chunk_003",
+        "eval_delta_epsilon_003_chunk_004"
+      ],
+      "retrieved_sections": [
+        "Clause 1 \u2014 Employment",
+        "Clause 2 \u2014 Training Period",
+        "Clause 4 \u2014 Early Exit",
+        "Clause 6 \u2014 Confidentiality",
+        "Clause 9 \u2014 Entire Agreement"
+      ],
+      "retrieved_scores": [
+        0.4406,
+        0.2597,
+        0.2578,
+        0.2239,
+        0.1964
+      ],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.5343000000266329
+    },
+    {
+      "test_id": "LIAB-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "What is the aggregate liability cap in the ACME-BetaCorp MSA?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_005",
+        "eval_acme_beta_001_chunk_000",
+        "eval_acme_beta_001_chunk_009",
+        "eval_acme_beta_001_chunk_001",
+        "eval_acme_beta_001_chunk_007"
+      ],
+      "retrieved_sections": [
+        "Section 11 \u2014 Limitation of Liability",
+        "Section 1 \u2014 Scope of Services",
+        "Section 17 \u2014 Entire Agreement",
+        "Section 4 \u2014 Fees",
+        "Section 13 \u2014 Insurance"
+      ],
+      "retrieved_scores": [
+        0.4461,
+        0.2854,
+        0.1921,
+        0.1781,
+        0.1761
+      ],
+      "relevant_sections": [
+        "Section 11"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.7393000000774919
+    },
+    {
+      "test_id": "LIAB-002",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Are consequential damages excluded in the MSA?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_009",
+        "eval_acme_beta_001_chunk_001",
+        "eval_acme_beta_001_chunk_005"
+      ],
+      "retrieved_sections": [
+        "Section 17 \u2014 Entire Agreement",
+        "Section 4 \u2014 Fees",
+        "Section 11 \u2014 Limitation of Liability"
+      ],
+      "retrieved_scores": [
+        0.1797,
+        0.1749,
+        0.1683
+      ],
+      "relevant_sections": [
+        "Section 11"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 0.3333333333333333,
+      "retrieval_latency_ms": 0.6505000001197914
+    },
+    {
+      "test_id": "LIAB-003",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "Does the Omega licence agreement contain a limitation of liability?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_omega_sigma_002_chunk_000",
+        "eval_omega_sigma_002_chunk_004",
+        "eval_omega_sigma_002_chunk_003",
+        "eval_omega_sigma_002_chunk_001",
+        "eval_omega_sigma_002_chunk_002"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Grant of Licence",
+        "Section 11 \u2014 Entire Agreement",
+        "Section 9 \u2014 Warranty Disclaimer",
+        "Section 4 \u2014 Restrictions",
+        "Section 7 \u2014 Indemnification"
+      ],
+      "retrieved_scores": [
+        0.5699,
+        0.3383,
+        0.25,
+        0.2042,
+        0.1628
+      ],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.5983999999443768
+    },
+    {
+      "test_id": "LIAB-004",
+      "contract_id": "eval_novahealth_medicore_005",
+      "question": "What is the liability cap in the DPA?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_novahealth_medicore_005_chunk_005",
+        "eval_novahealth_medicore_005_chunk_004",
+        "eval_novahealth_medicore_005_chunk_007",
+        "eval_novahealth_medicore_005_chunk_006",
+        "eval_novahealth_medicore_005_chunk_000"
+      ],
+      "retrieved_sections": [
+        "Article 9 \u2014 Limitation of Liability",
+        "Article 7 \u2014 Audit Rights",
+        "Article 13 \u2014 Miscellaneous",
+        "Article 11 \u2014 Data Protection Impact Assessments",
+        "Article 1 \u2014 Purpose"
+      ],
+      "retrieved_scores": [
+        0.5096,
+        0.237,
+        0.2187,
+        0.2145,
+        0.1787
+      ],
+      "relevant_sections": [
+        "Article 9"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.6384999999227148
+    },
+    {
+      "test_id": "LIAB-005",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "What is the supply agreement's liability cap duration basis?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_greenleaf_terra_004_chunk_003",
+        "eval_greenleaf_terra_004_chunk_000",
+        "eval_greenleaf_terra_004_chunk_005"
+      ],
+      "retrieved_sections": [
+        "Section 10 \u2014 Liability",
+        "Section 1 \u2014 Supply Obligations",
+        "Section 14 \u2014 Entire Agreement"
+      ],
+      "retrieved_scores": [
+        0.3575,
+        0.3249,
+        0.2404
+      ],
+      "relevant_sections": [
+        "Section 10"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.6020999999236665
+    },
+    {
+      "test_id": "RENEW-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Does the ACME-BetaCorp MSA auto-renew?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_001",
+        "eval_acme_beta_001_chunk_000"
+      ],
+      "retrieved_sections": [
+        "Section 4 \u2014 Fees",
+        "Section 1 \u2014 Scope of Services"
+      ],
+      "retrieved_scores": [
+        0.2015,
+        0.1881
+      ],
+      "relevant_sections": [
+        "Section 3"
+      ],
+      "recall_at_k": 0.0,
+      "mrr_at_k": 0.0,
+      "retrieval_latency_ms": 0.6386999998539977
+    },
+    {
+      "test_id": "RENEW-002",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "Does the Omega licence auto-renew?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_omega_sigma_002_chunk_000",
+        "eval_omega_sigma_002_chunk_001",
+        "eval_omega_sigma_002_chunk_004",
+        "eval_omega_sigma_002_chunk_002"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Grant of Licence",
+        "Section 4 \u2014 Restrictions",
+        "Section 11 \u2014 Entire Agreement",
+        "Section 7 \u2014 Indemnification"
+      ],
+      "retrieved_scores": [
+        0.515,
+        0.196,
+        0.1838,
+        0.1763
+      ],
+      "relevant_sections": [
+        "Section 2"
+      ],
+      "recall_at_k": 0.0,
+      "mrr_at_k": 0.0,
+      "retrieval_latency_ms": 0.5085000000235596
+    },
+    {
+      "test_id": "RENEW-003",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "Is there an automatic renewal clause in the employment bond?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_delta_epsilon_003_chunk_000",
+        "eval_delta_epsilon_003_chunk_002",
+        "eval_delta_epsilon_003_chunk_003",
+        "eval_delta_epsilon_003_chunk_001",
+        "eval_delta_epsilon_003_chunk_004"
+      ],
+      "retrieved_sections": [
+        "Clause 1 \u2014 Employment",
+        "Clause 4 \u2014 Early Exit",
+        "Clause 6 \u2014 Confidentiality",
+        "Clause 2 \u2014 Training Period",
+        "Clause 9 \u2014 Entire Agreement"
+      ],
+      "retrieved_scores": [
+        0.4603,
+        0.418,
+        0.386,
+        0.3793,
+        0.3674
+      ],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.5426999998690007
+    },
+    {
+      "test_id": "RENEW-004",
+      "contract_id": "eval_novahealth_medicore_005",
+      "question": "Does the DPA auto-renew or expire with the underlying services agreement?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_novahealth_medicore_005_chunk_005",
+        "eval_novahealth_medicore_005_chunk_007",
+        "eval_novahealth_medicore_005_chunk_000",
+        "eval_novahealth_medicore_005_chunk_004",
+        "eval_novahealth_medicore_005_chunk_006"
+      ],
+      "retrieved_sections": [
+        "Article 9 \u2014 Limitation of Liability",
+        "Article 13 \u2014 Miscellaneous",
+        "Article 1 \u2014 Purpose",
+        "Article 7 \u2014 Audit Rights",
+        "Article 11 \u2014 Data Protection Impact Assessments"
+      ],
+      "retrieved_scores": [
+        0.2339,
+        0.2153,
+        0.2022,
+        0.1836,
+        0.1644
+      ],
+      "relevant_sections": [
+        "Article 10"
+      ],
+      "recall_at_k": 0.0,
+      "mrr_at_k": 0.0,
+      "retrieval_latency_ms": 0.6511000001410139
+    },
+    {
+      "test_id": "PAY-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "What are the payment terms in the ACME-BetaCorp MSA?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_000",
+        "eval_acme_beta_001_chunk_009",
+        "eval_acme_beta_001_chunk_001",
+        "eval_acme_beta_001_chunk_002",
+        "eval_acme_beta_001_chunk_005"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Scope of Services",
+        "Section 17 \u2014 Entire Agreement",
+        "Section 4 \u2014 Fees",
+        "Section 6 \u2014 Intellectual Property",
+        "Section 11 \u2014 Limitation of Liability"
+      ],
+      "retrieved_scores": [
+        0.2439,
+        0.2436,
+        0.2326,
+        0.1916,
+        0.1746
+      ],
+      "relevant_sections": [
+        "Section 5"
+      ],
+      "recall_at_k": 0.0,
+      "mrr_at_k": 0.0,
+      "retrieval_latency_ms": 0.7534999999734282
+    },
+    {
+      "test_id": "PAY-002",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "What is the bond penalty amount in the employment agreement?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_delta_epsilon_003_chunk_000",
+        "eval_delta_epsilon_003_chunk_004",
+        "eval_delta_epsilon_003_chunk_002",
+        "eval_delta_epsilon_003_chunk_001",
+        "eval_delta_epsilon_003_chunk_003"
+      ],
+      "retrieved_sections": [
+        "Clause 1 \u2014 Employment",
+        "Clause 9 \u2014 Entire Agreement",
+        "Clause 4 \u2014 Early Exit",
+        "Clause 2 \u2014 Training Period",
+        "Clause 6 \u2014 Confidentiality"
+      ],
+      "retrieved_scores": [
+        0.6043,
+        0.4469,
+        0.4169,
+        0.3519,
+        0.294
+      ],
+      "relevant_sections": [
+        "Clause 3"
+      ],
+      "recall_at_k": 0.0,
+      "mrr_at_k": 0.0,
+      "retrieval_latency_ms": 0.5463999998482905
+    },
+    {
+      "test_id": "PAY-003",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "What are the payment terms for the supply agreement?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_greenleaf_terra_004_chunk_000",
+        "eval_greenleaf_terra_004_chunk_001",
+        "eval_greenleaf_terra_004_chunk_005",
+        "eval_greenleaf_terra_004_chunk_003",
+        "eval_greenleaf_terra_004_chunk_004"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Supply Obligations",
+        "Section 4 \u2014 Payment",
+        "Section 14 \u2014 Entire Agreement",
+        "Section 10 \u2014 Liability",
+        "Section 12 \u2014 Exit Provisions"
+      ],
+      "retrieved_scores": [
+        0.3803,
+        0.3641,
+        0.3373,
+        0.2572,
+        0.1817
+      ],
+      "relevant_sections": [
+        "Section 4",
+        "Section 11"
+      ],
+      "recall_at_k": 0.5,
+      "mrr_at_k": 0.5,
+      "retrieval_latency_ms": 0.612900000078298
+    },
+    {
+      "test_id": "PAY-004",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "Are the Omega licence fees refundable?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_omega_sigma_002_chunk_000",
+        "eval_omega_sigma_002_chunk_001",
+        "eval_omega_sigma_002_chunk_004",
+        "eval_omega_sigma_002_chunk_003",
+        "eval_omega_sigma_002_chunk_002"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Grant of Licence",
+        "Section 4 \u2014 Restrictions",
+        "Section 11 \u2014 Entire Agreement",
+        "Section 9 \u2014 Warranty Disclaimer",
+        "Section 7 \u2014 Indemnification"
+      ],
+      "retrieved_scores": [
+        0.5867,
+        0.3946,
+        0.2291,
+        0.2224,
+        0.1837
+      ],
+      "relevant_sections": [
+        "Section 3"
+      ],
+      "recall_at_k": 0.0,
+      "mrr_at_k": 0.0,
+      "retrieval_latency_ms": 0.5539000001135719
+    },
+    {
+      "test_id": "PAY-005",
+      "contract_id": "eval_novahealth_medicore_005",
+      "question": "How much is the monthly processing fee in the DPA?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_novahealth_medicore_005_chunk_001",
+        "eval_novahealth_medicore_005_chunk_000",
+        "eval_novahealth_medicore_005_chunk_005",
+        "eval_novahealth_medicore_005_chunk_004",
+        "eval_novahealth_medicore_005_chunk_007"
+      ],
+      "retrieved_sections": [
+        "Article 3 \u2014 Fees",
+        "Article 1 \u2014 Purpose",
+        "Article 9 \u2014 Limitation of Liability",
+        "Article 7 \u2014 Audit Rights",
+        "Article 13 \u2014 Miscellaneous"
+      ],
+      "retrieved_scores": [
+        0.4333,
+        0.2625,
+        0.2461,
+        0.1779,
+        0.1741
+      ],
+      "relevant_sections": [
+        "Article 3"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.6488999999874068
+    },
+    {
+      "test_id": "MISS-001",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "What are the limitation of liability terms in the Omega licence?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_omega_sigma_002_chunk_000",
+        "eval_omega_sigma_002_chunk_003",
+        "eval_omega_sigma_002_chunk_001",
+        "eval_omega_sigma_002_chunk_004",
+        "eval_omega_sigma_002_chunk_002"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Grant of Licence",
+        "Section 9 \u2014 Warranty Disclaimer",
+        "Section 4 \u2014 Restrictions",
+        "Section 11 \u2014 Entire Agreement",
+        "Section 7 \u2014 Indemnification"
+      ],
+      "retrieved_scores": [
+        0.447,
+        0.2698,
+        0.2281,
+        0.201,
+        0.1798
+      ],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.558400000045367
+    },
+    {
+      "test_id": "MISS-002",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "What data protection provisions does the Omega licence include?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_omega_sigma_002_chunk_000"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Grant of Licence"
+      ],
+      "retrieved_scores": [
+        0.401
+      ],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.5112999999710155
+    },
+    {
+      "test_id": "MISS-003",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "Is there an indemnification clause in the employment bond?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_delta_epsilon_003_chunk_000",
+        "eval_delta_epsilon_003_chunk_002",
+        "eval_delta_epsilon_003_chunk_003",
+        "eval_delta_epsilon_003_chunk_001",
+        "eval_delta_epsilon_003_chunk_004"
+      ],
+      "retrieved_sections": [
+        "Clause 1 \u2014 Employment",
+        "Clause 4 \u2014 Early Exit",
+        "Clause 6 \u2014 Confidentiality",
+        "Clause 2 \u2014 Training Period",
+        "Clause 9 \u2014 Entire Agreement"
+      ],
+      "retrieved_scores": [
+        0.4987,
+        0.4541,
+        0.4204,
+        0.4133,
+        0.4008
+      ],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.5078000001503824
+    },
+    {
+      "test_id": "MISS-004",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "Does the supply agreement include data protection terms?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_greenleaf_terra_004_chunk_000",
+        "eval_greenleaf_terra_004_chunk_005"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Supply Obligations",
+        "Section 14 \u2014 Entire Agreement"
+      ],
+      "retrieved_scores": [
+        0.317,
+        0.2963
+      ],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.5197999998927116
+    },
+    {
+      "test_id": "MISS-005",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "Does the employment bond have an automatic renewal clause?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_delta_epsilon_003_chunk_000",
+        "eval_delta_epsilon_003_chunk_001",
+        "eval_delta_epsilon_003_chunk_002",
+        "eval_delta_epsilon_003_chunk_003",
+        "eval_delta_epsilon_003_chunk_004"
+      ],
+      "retrieved_sections": [
+        "Clause 1 \u2014 Employment",
+        "Clause 2 \u2014 Training Period",
+        "Clause 4 \u2014 Early Exit",
+        "Clause 6 \u2014 Confidentiality",
+        "Clause 9 \u2014 Entire Agreement"
+      ],
+      "retrieved_scores": [
+        0.3962,
+        0.3834,
+        0.3708,
+        0.3409,
+        0.3167
+      ],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.561199999992823
+    },
+    {
+      "test_id": "CONF-001",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "What is the termination notice period in the supply agreement?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_greenleaf_terra_004_chunk_000",
+        "eval_greenleaf_terra_004_chunk_004",
+        "eval_greenleaf_terra_004_chunk_002",
+        "eval_greenleaf_terra_004_chunk_005",
+        "eval_greenleaf_terra_004_chunk_003"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Supply Obligations",
+        "Section 12 \u2014 Exit Provisions",
+        "Section 7 \u2014 Termination",
+        "Section 14 \u2014 Entire Agreement",
+        "Section 10 \u2014 Liability"
+      ],
+      "retrieved_scores": [
+        0.3759,
+        0.3707,
+        0.3496,
+        0.3383,
+        0.1741
+      ],
+      "relevant_sections": [
+        "Section 7",
+        "Section 12"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 0.5,
+      "retrieval_latency_ms": 2.3963999999523367
+    },
+    {
+      "test_id": "CONF-002",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "How many days does the buyer have to pay invoices in the supply agreement?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_greenleaf_terra_004_chunk_000",
+        "eval_greenleaf_terra_004_chunk_001",
+        "eval_greenleaf_terra_004_chunk_005",
+        "eval_greenleaf_terra_004_chunk_003",
+        "eval_greenleaf_terra_004_chunk_002"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Supply Obligations",
+        "Section 4 \u2014 Payment",
+        "Section 14 \u2014 Entire Agreement",
+        "Section 10 \u2014 Liability",
+        "Section 7 \u2014 Termination"
+      ],
+      "retrieved_scores": [
+        0.4042,
+        0.3717,
+        0.2952,
+        0.1823,
+        0.1681
+      ],
+      "relevant_sections": [
+        "Section 4",
+        "Section 11"
+      ],
+      "recall_at_k": 0.5,
+      "mrr_at_k": 0.5,
+      "retrieval_latency_ms": 0.7972000000791013
+    },
+    {
+      "test_id": "CONF-003",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "Are there any conflicting provisions in the GreenLeaf\u2013TerraCo agreement?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_greenleaf_terra_004_chunk_005",
+        "eval_greenleaf_terra_004_chunk_004",
+        "eval_greenleaf_terra_004_chunk_000",
+        "eval_greenleaf_terra_004_chunk_003"
+      ],
+      "retrieved_sections": [
+        "Section 14 \u2014 Entire Agreement",
+        "Section 12 \u2014 Exit Provisions",
+        "Section 1 \u2014 Supply Obligations",
+        "Section 10 \u2014 Liability"
+      ],
+      "retrieved_scores": [
+        0.3702,
+        0.2831,
+        0.2545,
+        0.1646
+      ],
+      "relevant_sections": [
+        "Section 4",
+        "Section 7",
+        "Section 11",
+        "Section 12"
+      ],
+      "recall_at_k": 0.25,
+      "mrr_at_k": 0.5,
+      "retrieval_latency_ms": 0.6739999998899293
+    },
+    {
+      "test_id": "CONF-004",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "Can the Buyer terminate the supply agreement with just 30 days notice?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_greenleaf_terra_004_chunk_000",
+        "eval_greenleaf_terra_004_chunk_005",
+        "eval_greenleaf_terra_004_chunk_002",
+        "eval_greenleaf_terra_004_chunk_001",
+        "eval_greenleaf_terra_004_chunk_003"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Supply Obligations",
+        "Section 14 \u2014 Entire Agreement",
+        "Section 7 \u2014 Termination",
+        "Section 4 \u2014 Payment",
+        "Section 10 \u2014 Liability"
+      ],
+      "retrieved_scores": [
+        0.407,
+        0.3295,
+        0.2633,
+        0.2131,
+        0.1971
+      ],
+      "relevant_sections": [
+        "Section 7",
+        "Section 12"
+      ],
+      "recall_at_k": 0.5,
+      "mrr_at_k": 0.3333333333333333,
+      "retrieval_latency_ms": 0.7023999999091757
+    },
+    {
+      "test_id": "CONF-005",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "What payment timeline applies to large orders over \u00a350,000?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_greenleaf_terra_004_chunk_001"
+      ],
+      "retrieved_sections": [
+        "Section 4 \u2014 Payment"
+      ],
+      "retrieved_scores": [
+        0.2498
+      ],
+      "relevant_sections": [
+        "Section 11"
+      ],
+      "recall_at_k": 0.0,
+      "mrr_at_k": 0.0,
+      "retrieval_latency_ms": 0.59489999989637
+    },
+    {
+      "test_id": "UNSUP-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "What is the weather forecast for tomorrow in Delaware?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_000",
+        "eval_acme_beta_001_chunk_001"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Scope of Services",
+        "Section 4 \u2014 Fees"
+      ],
+      "retrieved_scores": [
+        0.2091,
+        0.1671
+      ],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.6909999999606953
+    },
+    {
+      "test_id": "UNSUP-002",
+      "contract_id": "eval_acme_beta_001",
+      "question": "What was ACME Corporation's stock price last quarter?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [],
+      "retrieved_sections": [],
+      "retrieved_scores": [],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.7444000000305095
+    },
+    {
+      "test_id": "UNSUP-003",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Please draft a counter-proposal for Section 8 termination rights.",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_003",
+        "eval_acme_beta_001_chunk_000",
+        "eval_acme_beta_001_chunk_002",
+        "eval_acme_beta_001_chunk_005",
+        "eval_acme_beta_001_chunk_008"
+      ],
+      "retrieved_sections": [
+        "Section 8 \u2014 Termination",
+        "Section 1 \u2014 Scope of Services",
+        "Section 6 \u2014 Intellectual Property",
+        "Section 11 \u2014 Limitation of Liability",
+        "Section 15 \u2014 Audit Rights"
+      ],
+      "retrieved_scores": [
+        0.41,
+        0.2668,
+        0.2311,
+        0.2201,
+        0.209
+      ],
+      "relevant_sections": [
+        "Section 8"
+      ],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.9156000000984932
+    },
+    {
+      "test_id": "UNSUP-004",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Who is the CEO of BetaCorp Solutions?",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_000",
+        "eval_acme_beta_001_chunk_001",
+        "eval_acme_beta_001_chunk_009",
+        "eval_acme_beta_001_chunk_004",
+        "eval_acme_beta_001_chunk_005"
+      ],
+      "retrieved_sections": [
+        "Section 1 \u2014 Scope of Services",
+        "Section 4 \u2014 Fees",
+        "Section 17 \u2014 Entire Agreement",
+        "Section 10 \u2014 Indemnification",
+        "Section 11 \u2014 Limitation of Liability"
+      ],
+      "retrieved_scores": [
+        0.3309,
+        0.2333,
+        0.1617,
+        0.1533,
+        0.1515
+      ],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.7653999998638028
+    },
+    {
+      "test_id": "UNSUP-005",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Explain quantum computing and how it relates to this contract.",
+      "config_name": "improved",
+      "top_k_used": 5,
+      "threshold_used": 0.15,
+      "retrieved_chunk_ids": [
+        "eval_acme_beta_001_chunk_009"
+      ],
+      "retrieved_sections": [
+        "Section 17 \u2014 Entire Agreement"
+      ],
+      "retrieved_scores": [
+        0.1653
+      ],
+      "relevant_sections": [],
+      "recall_at_k": 1.0,
+      "mrr_at_k": 1.0,
+      "retrieval_latency_ms": 0.7296999999653053
+    }
+  ],
+  "generation_results": [
+    {
+      "test_id": "TERM-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "What is the notice period required for termination for convenience?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Either party may terminate for convenience upon 90 days prior written notice (Section 8.1). -  performed in a professional manner consistent\nwith generally accepted industry standards.\n\nSection 8 \u2014 Termination\n8.1 Termination for Convenience. Either party may terminate this Agreement for\nconvenience upon ninety (90) days prior written notice to the other party.\n8.2 Termin... - under this Agreement during the twelve (12)\nmonths preceding the event giving rise to the claim.\n\nSection 11 \u2014 Limitation of Liability\n11.1 Aggregate Cap. EXCEPT FOR OBLIGATIONS ARISING UNDER SECTIONS 10\n(INDEMNIFICATION) AND 12 (CONFIDENTIALITY), EACH PARTY'S TOTAL AGGREGATE\nLIA...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "ninety",
+        "90",
+        "days",
+        "written notice"
+      ],
+      "matched_keywords": [
+        "ninety",
+        "90",
+        "days",
+        "written notice"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.09060000002136803,
+      "total_latency_ms": 0.7301000000552449,
+      "prompt_tokens": 370,
+      "completion_tokens": 172,
+      "total_tokens": 542
+    },
+    {
+      "test_id": "TERM-002",
+      "contract_id": "eval_acme_beta_001",
+      "question": "How long does the breaching party have to cure a material breach before termination?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: The breaching party has 30 days to cure a material breach after receiving written notice (Section 8.2). -  performed in a professional manner consistent\nwith generally accepted industry standards.\n\nSection 8 \u2014 Termination\n8.1 Termination for Convenience. Either party may terminate this Agreement for\nconvenience upon ninety (90) days prior written notice to the other party.\n8.2 Termin... -  to conflict-of-laws principles.\n16.2 Dispute Resolution. The parties agree to attempt good-faith negotiation for thirty\n(30) days. If unresolved, disputes shall be submitted to binding commercial arbitration\nadministered by the American Arbitration Association (AAA) in Wilmingto...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "thirty",
+        "30",
+        "days",
+        "cure"
+      ],
+      "matched_keywords": [
+        "thirty",
+        "30",
+        "days",
+        "cure"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": true,
+      "conflict_detection_correct": false,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.027899999849978485,
+      "total_latency_ms": 0.4826999997931125,
+      "prompt_tokens": 374,
+      "completion_tokens": 175,
+      "total_tokens": 549
+    },
+    {
+      "test_id": "TERM-003",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "Can the licensee terminate early for cause?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Licensee may only terminate at the end of the current term with 60 days notice. There is no cure period and no mid-term termination right for Licensee. -  by Licensee. Licensee may terminate only at the end of the then-current\nLicence Term by providing sixty (60) days prior written notice.\n6.3 No Cure Period. Licensor's right to terminate for breach is immediate and does not\nrequire a cure period.\n\nSection 7 \u2014 Indemnification\n7.1 ... - n annual licence fee of $120,000 USD.\n3.2 Payment Due Date. The full annual fee is due within fifteen (15) days of the\nEffective Date and each anniversary thereafter.\n3.3 No Refunds. All fees paid are non-refundable under any circumstances.\n\nSection 4 \u2014 Restrictions\nLicensee shal...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 4,
+      "valid_citations": 4,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "end of",
+        "term",
+        "sixty",
+        "60"
+      ],
+      "matched_keywords": [
+        "end of",
+        "term",
+        "sixty",
+        "60"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "HIGH",
+      "predicted_risk_level": "HIGH",
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.02380000000812288,
+      "total_latency_ms": 0.37190000011833035,
+      "prompt_tokens": 293,
+      "completion_tokens": 187,
+      "total_tokens": 480
+    },
+    {
+      "test_id": "TERM-004",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "Is there a cure period for the employee bond termination?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: There is a 90-day notice period (Clause 4.1) but no cure period for breach. - ial Intelligence division, commencing from July 1, 2025.\n\nClause 2 \u2014 Training Period\nThe Company shall provide the Employee with intensive training on proprietary AI/ML\nsystems during the first six (6) months of employment at an estimated training cost\nof \u20b94,50,000 (Rupees Four L... - EMPLOYMENT BOND AGREEMENT\n\nThis Employment Bond Agreement (\"Bond\") is executed on June 10, 2025,\nby and between Delta Technologies Pvt. Ltd., a company incorporated under the\nCompanies Act, 2013, having its registered office in Pune, Maharashtra (\"Company\"),\nand Mr. Arjun Sharma,...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "ninety",
+        "90",
+        "notice"
+      ],
+      "matched_keywords": [
+        "90",
+        "notice"
+      ],
+      "faithfulness_score": 0.6666666666666666,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.025000000050567905,
+      "total_latency_ms": 0.3684000000703236,
+      "prompt_tokens": 368,
+      "completion_tokens": 168,
+      "total_tokens": 536
+    },
+    {
+      "test_id": "TERM-005",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "What is the termination notice period in this supply agreement?",
+      "config_name": "improved",
+      "answer_text": "Conflicting provisions identified: Conflicting: Section 7.1 says 30 days, but Section 12.1 (amendment) extends it to 180 days.. Evidence:  Overdue Amounts. Overdue amounts accrue interest at 3% per annum\nabove the Bank of England base rate.\n\nSection 12 \u2014 Exit Provisions\nNOTICE: THE FOLLOWING EXIT PROVISIONS WERE ADDED BY AMENDMENT AND\nSUPPLEMENT SECTION 7.\n12.1 Termination Notice Period. Notwithstanding Section 7.1...  arbitration under the LCIA Rules in London.\n\nSection 14 \u2014 Entire Agreement\nThis Agreement, as amended, constitutes the entire agreement between the parties.\n\nIN WITNESS WHEREOF:\n\nGreenLeaf Organics PLC               TerraCo Agricultural Supplies Ltd.\nBy: ___________________     ...",
+      "evidence_status": "CONFLICTING",
+      "expected_evidence_status": "CONFLICTING",
+      "total_citations": 4,
+      "valid_citations": 4,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "thirty",
+        "30",
+        "one hundred and eighty",
+        "180"
+      ],
+      "matched_keywords": [
+        "30",
+        "180"
+      ],
+      "faithfulness_score": 0.5,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": true,
+      "system_detected_conflict": true,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.02220000010311196,
+      "total_latency_ms": 0.4043999999794323,
+      "prompt_tokens": 298,
+      "completion_tokens": 176,
+      "total_tokens": 474
+    },
+    {
+      "test_id": "TERM-006",
+      "contract_id": "eval_novahealth_medicore_005",
+      "question": "What happens after termination of the DPA?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Processor must return or securely delete all Personal Data within 45 days using NIST SP 800-88 methods (Article 10.3). - ossly\nnegligent data breaches are not subject to the cap in Article 9.\n\nArticle 9 \u2014 Limitation of Liability\n9.1 Aggregate Cap. Subject to Article 8.2, each party's total aggregate liability\nshall not exceed \u20ac1,500,000 or the total fees paid during the preceding twenty-four\n(24) m... - solution\n12.1 This DPA is governed by the laws of Ireland.\n12.2 Disputes shall first be escalated to senior executives for good-faith resolution\nover thirty (30) days. Unresolved disputes shall be submitted to the courts of Dublin.\n\nArticle 13 \u2014 Miscellaneous\nThis DPA supplements...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "return",
+        "delete",
+        "forty-five",
+        "45",
+        "days"
+      ],
+      "matched_keywords": [
+        "return",
+        "delete",
+        "45",
+        "days"
+      ],
+      "faithfulness_score": 0.8,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.02499999982319423,
+      "total_latency_ms": 0.3518999999414518,
+      "prompt_tokens": 364,
+      "completion_tokens": 179,
+      "total_tokens": 543
+    },
+    {
+      "test_id": "INDEM-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Is indemnification mutual or one-sided in the ACME-BetaCorp agreement?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Mutual. Provider indemnifies Client for negligence/IP infringement; Client indemnifies Provider for misuse of deliverables (Section 10). - al term is twenty-four (24) months from the Effective Date.\n3.2 Renewal. This Agreement shall automatically renew for successive twelve (12)\nmonth periods unless either party provides written notice of non-renewal at least\nsixty (60) days prior to the expiration of the then-curre... - under this Agreement during the twelve (12)\nmonths preceding the event giving rise to the claim.\n\nSection 11 \u2014 Limitation of Liability\n11.1 Aggregate Cap. EXCEPT FOR OBLIGATIONS ARISING UNDER SECTIONS 10\n(INDEMNIFICATION) AND 12 (CONFIDENTIALITY), EACH PARTY'S TOTAL AGGREGATE\nLIA...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "mutual",
+        "provider",
+        "client"
+      ],
+      "matched_keywords": [
+        "mutual",
+        "provider",
+        "client"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.02369999992879457,
+      "total_latency_ms": 0.39059999994606187,
+      "prompt_tokens": 371,
+      "completion_tokens": 184,
+      "total_tokens": 555
+    },
+    {
+      "test_id": "INDEM-002",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "Does the Omega Software Licence include a mutual indemnification clause?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: No. Only Licensee indemnifies Licensor (Section 7.1). Licensor has no indemnification obligation (Section 7.2). - SOFTWARE LICENCE AGREEMENT\n\nThis Software Licence Agreement (\"Agreement\") is entered into as of March 1, 2025,\nby and between Omega Systems Inc., a New York corporation (\"Licensor\"),\nand Sigma Analytics Ltd., a UK limited company (\"Licensee\").\n\nSection 1 \u2014 Grant of Licence\nLicens... - ion 8 \u2014 Confidentiality\n8.1 Each party agrees to keep confidential all non-public information received from\nthe other party during the term of this Agreement.\n8.2 Survival. Confidentiality obligations survive termination for two (2) years.\n\nSection 9 \u2014 Warranty Disclaimer\nTHE SOF...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 4,
+      "valid_citations": 4,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "one-sided",
+        "licensee",
+        "no licensor"
+      ],
+      "matched_keywords": [
+        "licensee"
+      ],
+      "faithfulness_score": 0.3333333333333333,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "HIGH",
+      "predicted_risk_level": "HIGH",
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.02220000010311196,
+      "total_latency_ms": 0.3595000000586879,
+      "prompt_tokens": 301,
+      "completion_tokens": 177,
+      "total_tokens": 478
+    },
+    {
+      "test_id": "INDEM-003",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Is there an indemnification cap in the ACME-BetaCorp MSA?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Yes. Each party's aggregate indemnification is capped at fees paid in the preceding 12 months (Section 10.3). - e\nNeither party shall be liable for delays caused by events beyond its reasonable control.\n\nSection 10 \u2014 Indemnification\n10.1 Provider Indemnification. Provider shall indemnify, defend, and hold harmless\nClient against all third-party claims arising from Provider's gross negligen... - MASTER SERVICES AGREEMENT\n\nThis Master Services Agreement (\"Agreement\") is entered into as of January 15, 2025,\nby and between ACME Corporation, a Delaware corporation (\"Client\"),\nand BetaCorp Solutions LLC, a California limited liability company (\"Provider\").\n\nSection 1 \u2014 Scope ...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "twelve",
+        "12",
+        "months",
+        "fees"
+      ],
+      "matched_keywords": [
+        "12",
+        "months",
+        "fees"
+      ],
+      "faithfulness_score": 0.75,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.019599999859565287,
+      "total_latency_ms": 0.320099999953527,
+      "prompt_tokens": 368,
+      "completion_tokens": 177,
+      "total_tokens": 545
+    },
+    {
+      "test_id": "INDEM-004",
+      "contract_id": "eval_novahealth_medicore_005",
+      "question": "Are data breach indemnification obligations capped in the DPA?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: No \u2014 wilful or grossly negligent data breaches are explicitly uncapped (Article 8.2), overriding the general cap in Article 9. - nfidentiality obligations survive termination of this DPA indefinitely for\nhealth data and Special Category Data.\n\nArticle 7 \u2014 Audit Rights\n7.1 Controller shall have the right to audit Processor's compliance with this DPA,\nupon reasonable notice, no more than twice per calendar y... - ossly\nnegligent data breaches are not subject to the cap in Article 9.\n\nArticle 9 \u2014 Limitation of Liability\n9.1 Aggregate Cap. Subject to Article 8.2, each party's total aggregate liability\nshall not exceed \u20ac1,500,000 or the total fees paid during the preceding twenty-four\n(24) m...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "uncapped",
+        "wilful",
+        "gross"
+      ],
+      "matched_keywords": [
+        "uncapped",
+        "wilful",
+        "gross"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.022199999875738285,
+      "total_latency_ms": 0.36769999996977276,
+      "prompt_tokens": 369,
+      "completion_tokens": 181,
+      "total_tokens": 550
+    },
+    {
+      "test_id": "INDEM-005",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "Does the employment bond include indemnification provisions?",
+      "config_name": "improved",
+      "answer_text": "The agreement does not contain provisions concerning indemnification or this topic. No indemnification provisions exist in the employment bond agreement.",
+      "evidence_status": "INSUFFICIENT",
+      "expected_evidence_status": "INSUFFICIENT",
+      "total_citations": 0,
+      "valid_citations": 0,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "no",
+        "absent",
+        "not",
+        "indemnif"
+      ],
+      "matched_keywords": [
+        "no",
+        "not",
+        "indemnif"
+      ],
+      "faithfulness_score": 0.75,
+      "is_abstention_case": true,
+      "system_abstained": true,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.017500000012660166,
+      "total_latency_ms": 1.1846999998397223,
+      "prompt_tokens": 368,
+      "completion_tokens": 38,
+      "total_tokens": 406
+    },
+    {
+      "test_id": "LIAB-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "What is the aggregate liability cap in the ACME-BetaCorp MSA?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Total aggregate liability is capped at fees paid in the preceding 12 months (Section 11.1), with carve-outs for Sections 10 and 12. - under this Agreement during the twelve (12)\nmonths preceding the event giving rise to the claim.\n\nSection 11 \u2014 Limitation of Liability\n11.1 Aggregate Cap. EXCEPT FOR OBLIGATIONS ARISING UNDER SECTIONS 10\n(INDEMNIFICATION) AND 12 (CONFIDENTIALITY), EACH PARTY'S TOTAL AGGREGATE\nLIA... -  to conflict-of-laws principles.\n16.2 Dispute Resolution. The parties agree to attempt good-faith negotiation for thirty\n(30) days. If unresolved, disputes shall be submitted to binding commercial arbitration\nadministered by the American Arbitration Association (AAA) in Wilmingto...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "twelve",
+        "12",
+        "months",
+        "fees"
+      ],
+      "matched_keywords": [
+        "twelve",
+        "12",
+        "months",
+        "fees"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": true,
+      "conflict_detection_correct": false,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.025100000129896216,
+      "total_latency_ms": 0.41910000004463654,
+      "prompt_tokens": 369,
+      "completion_tokens": 182,
+      "total_tokens": 551
+    },
+    {
+      "test_id": "LIAB-002",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Are consequential damages excluded in the MSA?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Yes. Section 11.2 mutually excludes indirect, incidental, special, consequential, and punitive damages. -  to conflict-of-laws principles.\n16.2 Dispute Resolution. The parties agree to attempt good-faith negotiation for thirty\n(30) days. If unresolved, disputes shall be submitted to binding commercial arbitration\nadministered by the American Arbitration Association (AAA) in Wilmingto... - al term is twenty-four (24) months from the Effective Date.\n3.2 Renewal. This Agreement shall automatically renew for successive twelve (12)\nmonth periods unless either party provides written notice of non-renewal at least\nsixty (60) days prior to the expiration of the then-curre...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "consequential",
+        "indirect",
+        "excluded",
+        "waiv"
+      ],
+      "matched_keywords": [
+        "consequential",
+        "indirect"
+      ],
+      "faithfulness_score": 0.5,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": true,
+      "conflict_detection_correct": false,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.018799999907059828,
+      "total_latency_ms": 0.31309999985751347,
+      "prompt_tokens": 365,
+      "completion_tokens": 175,
+      "total_tokens": 540
+    },
+    {
+      "test_id": "LIAB-003",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "Does the Omega licence agreement contain a limitation of liability?",
+      "config_name": "improved",
+      "answer_text": "The agreement does not contain provisions concerning liability limits or this topic. No. The Omega licence contains no limitation of liability clause, creating uncapped exposure.",
+      "evidence_status": "INSUFFICIENT",
+      "expected_evidence_status": "INSUFFICIENT",
+      "total_citations": 0,
+      "valid_citations": 0,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "no",
+        "absent",
+        "missing",
+        "limitation of liability"
+      ],
+      "matched_keywords": [
+        "no",
+        "limitation of liability"
+      ],
+      "faithfulness_score": 0.5,
+      "is_abstention_case": true,
+      "system_abstained": true,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "CRITICAL",
+      "predicted_risk_level": "CRITICAL",
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.010400000064691994,
+      "total_latency_ms": 0.2971999999772379,
+      "prompt_tokens": 370,
+      "completion_tokens": 44,
+      "total_tokens": 414
+    },
+    {
+      "test_id": "LIAB-004",
+      "contract_id": "eval_novahealth_medicore_005",
+      "question": "What is the liability cap in the DPA?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: \u20ac1,500,000 or total fees paid in the preceding 24 months, whichever is greater (Article 9.1). - ossly\nnegligent data breaches are not subject to the cap in Article 9.\n\nArticle 9 \u2014 Limitation of Liability\n9.1 Aggregate Cap. Subject to Article 8.2, each party's total aggregate liability\nshall not exceed \u20ac1,500,000 or the total fees paid during the preceding twenty-four\n(24) m... - sary to perform the services.\n4.3 Sub-processors. Processor shall not engage any sub-processor without prior\nspecific written authorisation from Controller. A list of approved sub-processors\nis attached as Annex B.\n4.4 Cross-border Transfers. Any transfer of Personal Data outside...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "1,500,000",
+        "\u20ac1,500,000",
+        "twenty-four",
+        "24",
+        "months"
+      ],
+      "matched_keywords": [
+        "1,500,000",
+        "\u20ac1,500,000",
+        "twenty-four",
+        "24",
+        "months"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.01950000000761065,
+      "total_latency_ms": 0.28589999988071213,
+      "prompt_tokens": 363,
+      "completion_tokens": 173,
+      "total_tokens": 536
+    },
+    {
+      "test_id": "LIAB-005",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "What is the supply agreement's liability cap duration basis?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Total fees paid during the preceding 6 months (Section 10.1). - SUPPLY AGREEMENT\n\nThis Supply Agreement (\"Agreement\") is made on August 20, 2025,\nBETWEEN: GreenLeaf Organics PLC, registered in England (\"Buyer\"),\nAND: TerraCo Agricultural Supplies Ltd., registered in Wales (\"Supplier\").\n\nSection 1 \u2014 Supply Obligations\nSupplier shall deliver or... - Each party indemnifies the other for claims arising from its negligence.\n\nSection 10 \u2014 Liability\n10.1 Liability Cap. Each party's total aggregate liability under this Agreement shall\nnot exceed the total fees paid during the preceding six (6) months.\n10.2 Exclusion. Neither party...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 4,
+      "valid_citations": 4,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "six",
+        "6",
+        "months"
+      ],
+      "matched_keywords": [
+        "six",
+        "6",
+        "months"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.017800000023271423,
+      "total_latency_ms": 0.2921000000242202,
+      "prompt_tokens": 298,
+      "completion_tokens": 165,
+      "total_tokens": 463
+    },
+    {
+      "test_id": "RENEW-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Does the ACME-BetaCorp MSA auto-renew?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Yes. Auto-renews for 12-month periods unless 60 days notice of non-renewal is given (Section 3.2). -  to conflict-of-laws principles.\n16.2 Dispute Resolution. The parties agree to attempt good-faith negotiation for thirty\n(30) days. If unresolved, disputes shall be submitted to binding commercial arbitration\nadministered by the American Arbitration Association (AAA) in Wilmingto... - e\nNeither party shall be liable for delays caused by events beyond its reasonable control.\n\nSection 10 \u2014 Indemnification\n10.1 Provider Indemnification. Provider shall indemnify, defend, and hold harmless\nClient against all third-party claims arising from Provider's gross negligen...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 4,
+      "valid_citations": 4,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "automatically",
+        "renew",
+        "twelve",
+        "12",
+        "sixty",
+        "60"
+      ],
+      "matched_keywords": [
+        "renew",
+        "12",
+        "60"
+      ],
+      "faithfulness_score": 0.5,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": true,
+      "conflict_detection_correct": false,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.03779999997277628,
+      "total_latency_ms": 0.5232000000887638,
+      "prompt_tokens": 292,
+      "completion_tokens": 174,
+      "total_tokens": 466
+    },
+    {
+      "test_id": "RENEW-002",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "Does the Omega licence auto-renew?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: No. The agreement expires at the end of the 12-month term without automatic renewal (Section 2). - SOFTWARE LICENCE AGREEMENT\n\nThis Software Licence Agreement (\"Agreement\") is entered into as of March 1, 2025,\nby and between Omega Systems Inc., a New York corporation (\"Licensor\"),\nand Sigma Analytics Ltd., a UK limited company (\"Licensee\").\n\nSection 1 \u2014 Grant of Licence\nLicens... - ion 8 \u2014 Confidentiality\n8.1 Each party agrees to keep confidential all non-public information received from\nthe other party during the term of this Agreement.\n8.2 Survival. Confidentiality obligations survive termination for two (2) years.\n\nSection 9 \u2014 Warranty Disclaimer\nTHE SOF...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "no",
+        "expires",
+        "without",
+        "automatic"
+      ],
+      "matched_keywords": [
+        "no",
+        "expires",
+        "without",
+        "automatic"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.019300000076327706,
+      "total_latency_ms": 0.27890000001207227,
+      "prompt_tokens": 362,
+      "completion_tokens": 174,
+      "total_tokens": 536
+    },
+    {
+      "test_id": "RENEW-003",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "Is there an automatic renewal clause in the employment bond?",
+      "config_name": "improved",
+      "answer_text": "The agreement does not contain provisions concerning automatic renewal or this topic. No automatic renewal clause exists in the employment bond.",
+      "evidence_status": "INSUFFICIENT",
+      "expected_evidence_status": "INSUFFICIENT",
+      "total_citations": 0,
+      "valid_citations": 0,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "no",
+        "absent",
+        "not"
+      ],
+      "matched_keywords": [
+        "no",
+        "not"
+      ],
+      "faithfulness_score": 0.6666666666666666,
+      "is_abstention_case": true,
+      "system_abstained": true,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.010400000064691994,
+      "total_latency_ms": 0.29289999997672567,
+      "prompt_tokens": 368,
+      "completion_tokens": 36,
+      "total_tokens": 404
+    },
+    {
+      "test_id": "RENEW-004",
+      "contract_id": "eval_novahealth_medicore_005",
+      "question": "Does the DPA auto-renew or expire with the underlying services agreement?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: The DPA remains in effect for the duration of the underlying EHR services agreement (Article 10.1). - ossly\nnegligent data breaches are not subject to the cap in Article 9.\n\nArticle 9 \u2014 Limitation of Liability\n9.1 Aggregate Cap. Subject to Article 8.2, each party's total aggregate liability\nshall not exceed \u20ac1,500,000 or the total fees paid during the preceding twenty-four\n(24) m... - solution\n12.1 This DPA is governed by the laws of Ireland.\n12.2 Disputes shall first be escalated to senior executives for good-faith resolution\nover thirty (30) days. Unresolved disputes shall be submitted to the courts of Dublin.\n\nArticle 13 \u2014 Miscellaneous\nThis DPA supplements...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "duration",
+        "underlying",
+        "services"
+      ],
+      "matched_keywords": [
+        "duration",
+        "underlying",
+        "services"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.01849999989644857,
+      "total_latency_ms": 0.30420000007325143,
+      "prompt_tokens": 372,
+      "completion_tokens": 174,
+      "total_tokens": 546
+    },
+    {
+      "test_id": "PAY-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "What are the payment terms in the ACME-BetaCorp MSA?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Net 30 \u2014 invoices are due within 30 days. Late payments accrue 1.5% monthly interest (Section 5). -  to conflict-of-laws principles.\n16.2 Dispute Resolution. The parties agree to attempt good-faith negotiation for thirty\n(30) days. If unresolved, disputes shall be submitted to binding commercial arbitration\nadministered by the American Arbitration Association (AAA) in Wilmingto... - al term is twenty-four (24) months from the Effective Date.\n3.2 Renewal. This Agreement shall automatically renew for successive twelve (12)\nmonth periods unless either party provides written notice of non-renewal at least\nsixty (60) days prior to the expiration of the then-curre...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "thirty",
+        "30",
+        "Net 30"
+      ],
+      "matched_keywords": [
+        "thirty",
+        "30",
+        "Net 30"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": true,
+      "conflict_detection_correct": false,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.019600000086938962,
+      "total_latency_ms": 0.3070000000207074,
+      "prompt_tokens": 366,
+      "completion_tokens": 174,
+      "total_tokens": 540
+    },
+    {
+      "test_id": "PAY-002",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "What is the bond penalty amount in the employment agreement?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: \u20b92,00,000 (Rupees Two Lakhs) as liquidated damages, reduced pro-rata for completed months (Clause 3.2-3.3). - EMPLOYMENT BOND AGREEMENT\n\nThis Employment Bond Agreement (\"Bond\") is executed on June 10, 2025,\nby and between Delta Technologies Pvt. Ltd., a company incorporated under the\nCompanies Act, 2013, having its registered office in Pune, Maharashtra (\"Company\"),\nand Mr. Arjun Sharma,... - ,000 (Rupees Two Lakhs) as liquidated damages representing a reasonable\npre-estimate of the Company's training investment loss.\n3.3 Pro-rata Reduction. The bond penalty shall be reduced pro-rata for each completed\nmonth of service after the training period.\n\nClause 4 \u2014 Early Exit...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "2,00,000",
+        "two lakhs",
+        "\u20b92,00,000",
+        "200000",
+        "Two Lakhs"
+      ],
+      "matched_keywords": [
+        "2,00,000",
+        "two lakhs",
+        "\u20b92,00,000",
+        "Two Lakhs"
+      ],
+      "faithfulness_score": 0.8,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.019300000076327706,
+      "total_latency_ms": 0.31160000003183086,
+      "prompt_tokens": 368,
+      "completion_tokens": 176,
+      "total_tokens": 544
+    },
+    {
+      "test_id": "PAY-003",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "What are the payment terms for the supply agreement?",
+      "config_name": "improved",
+      "answer_text": "Conflicting provisions identified: Conflicting: Section 4 specifies Net 45, but Section 11.1 (amendment) specifies Net 90 for orders exceeding \u00a350,000.. Evidence: Each party indemnifies the other for claims arising from its negligence.\n\nSection 10 \u2014 Liability\n10.1 Liability Cap. Each party's total aggregate liability under this Agreement shall\nnot exceed the total fees paid during the preceding six (6) months.\n10.2 Exclusion. Neither party...  Overdue Amounts. Overdue amounts accrue interest at 3% per annum\nabove the Bank of England base rate.\n\nSection 12 \u2014 Exit Provisions\nNOTICE: THE FOLLOWING EXIT PROVISIONS WERE ADDED BY AMENDMENT AND\nSUPPLEMENT SECTION 7.\n12.1 Termination Notice Period. Notwithstanding Section 7.1...",
+      "evidence_status": "CONFLICTING",
+      "expected_evidence_status": "CONFLICTING",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "forty-five",
+        "45",
+        "ninety",
+        "90"
+      ],
+      "matched_keywords": [
+        "45",
+        "90"
+      ],
+      "faithfulness_score": 0.5,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": true,
+      "system_detected_conflict": true,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.019899999870176543,
+      "total_latency_ms": 0.3309999999601132,
+      "prompt_tokens": 366,
+      "completion_tokens": 182,
+      "total_tokens": 548
+    },
+    {
+      "test_id": "PAY-004",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "Are the Omega licence fees refundable?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: No. All fees paid are non-refundable under any circumstances (Section 3.3). - SOFTWARE LICENCE AGREEMENT\n\nThis Software Licence Agreement (\"Agreement\") is entered into as of March 1, 2025,\nby and between Omega Systems Inc., a New York corporation (\"Licensor\"),\nand Sigma Analytics Ltd., a UK limited company (\"Licensee\").\n\nSection 1 \u2014 Grant of Licence\nLicens... - ion 8 \u2014 Confidentiality\n8.1 Each party agrees to keep confidential all non-public information received from\nthe other party during the term of this Agreement.\n8.2 Survival. Confidentiality obligations survive termination for two (2) years.\n\nSection 9 \u2014 Warranty Disclaimer\nTHE SOF...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "non-refundable",
+        "no",
+        "refund"
+      ],
+      "matched_keywords": [
+        "non-refundable",
+        "no",
+        "refund"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.01889999998638814,
+      "total_latency_ms": 0.28150000002824527,
+      "prompt_tokens": 363,
+      "completion_tokens": 168,
+      "total_tokens": 531
+    },
+    {
+      "test_id": "PAY-005",
+      "contract_id": "eval_novahealth_medicore_005",
+      "question": "How much is the monthly processing fee in the DPA?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: \u20ac25,000 per month for hosting up to 500,000 patient records (Article 3.1). - ossly\nnegligent data breaches are not subject to the cap in Article 9.\n\nArticle 9 \u2014 Limitation of Liability\n9.1 Aggregate Cap. Subject to Article 8.2, each party's total aggregate liability\nshall not exceed \u20ac1,500,000 or the total fees paid during the preceding twenty-four\n(24) m... - ta, genetic data, and biometric data.\n\nArticle 3 \u2014 Fees\n3.1 Processing Fees. Controller shall pay Processor a monthly processing fee of\n\u20ac25,000 for hosting and managing up to 500,000 patient records.\n3.2 Invoicing. Processor shall issue invoices on the first business day of each\n...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "\u20ac25,000",
+        "25,000"
+      ],
+      "matched_keywords": [
+        "\u20ac25,000",
+        "25,000"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.018699999827731517,
+      "total_latency_ms": 0.5255999999462801,
+      "prompt_tokens": 366,
+      "completion_tokens": 168,
+      "total_tokens": 534
+    },
+    {
+      "test_id": "MISS-001",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "What are the limitation of liability terms in the Omega licence?",
+      "config_name": "improved",
+      "answer_text": "The agreement does not contain provisions concerning liability limits or this topic. No limitation of liability clause exists in the Omega licence agreement.",
+      "evidence_status": "INSUFFICIENT",
+      "expected_evidence_status": "INSUFFICIENT",
+      "total_citations": 0,
+      "valid_citations": 0,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "no",
+        "absent",
+        "missing",
+        "not"
+      ],
+      "matched_keywords": [
+        "no",
+        "not"
+      ],
+      "faithfulness_score": 0.5,
+      "is_abstention_case": true,
+      "system_abstained": true,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "CRITICAL",
+      "predicted_risk_level": "CRITICAL",
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.011900000117748277,
+      "total_latency_ms": 0.29400000016721606,
+      "prompt_tokens": 369,
+      "completion_tokens": 39,
+      "total_tokens": 408
+    },
+    {
+      "test_id": "MISS-002",
+      "contract_id": "eval_omega_sigma_002",
+      "question": "What data protection provisions does the Omega licence include?",
+      "config_name": "improved",
+      "answer_text": "The agreement does not contain provisions concerning data protection or this topic. No data protection, GDPR, or CCPA provisions exist in the Omega licence.",
+      "evidence_status": "INSUFFICIENT",
+      "expected_evidence_status": "INSUFFICIENT",
+      "total_citations": 0,
+      "valid_citations": 0,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "no",
+        "absent",
+        "missing",
+        "not",
+        "data protection"
+      ],
+      "matched_keywords": [
+        "no",
+        "not",
+        "data protection"
+      ],
+      "faithfulness_score": 0.6,
+      "is_abstention_case": true,
+      "system_abstained": true,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "HIGH",
+      "predicted_risk_level": "HIGH",
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.01049999991664663,
+      "total_latency_ms": 0.317499999937354,
+      "prompt_tokens": 228,
+      "completion_tokens": 39,
+      "total_tokens": 267
+    },
+    {
+      "test_id": "MISS-003",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "Is there an indemnification clause in the employment bond?",
+      "config_name": "improved",
+      "answer_text": "The agreement does not contain provisions concerning indemnification or this topic. The employment bond does not include any indemnification provisions.",
+      "evidence_status": "INSUFFICIENT",
+      "expected_evidence_status": "INSUFFICIENT",
+      "total_citations": 0,
+      "valid_citations": 0,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "no",
+        "absent",
+        "not",
+        "indemnif"
+      ],
+      "matched_keywords": [
+        "no",
+        "not",
+        "indemnif"
+      ],
+      "faithfulness_score": 0.75,
+      "is_abstention_case": true,
+      "system_abstained": true,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "LOW",
+      "predicted_risk_level": "LOW",
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.011100000165242818,
+      "total_latency_ms": 0.31930000000102154,
+      "prompt_tokens": 368,
+      "completion_tokens": 38,
+      "total_tokens": 406
+    },
+    {
+      "test_id": "MISS-004",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "Does the supply agreement include data protection terms?",
+      "config_name": "improved",
+      "answer_text": "The agreement does not contain provisions concerning data protection or this topic. The supply agreement does not include data protection or privacy provisions.",
+      "evidence_status": "INSUFFICIENT",
+      "expected_evidence_status": "INSUFFICIENT",
+      "total_citations": 0,
+      "valid_citations": 0,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "no",
+        "absent",
+        "missing",
+        "not",
+        "data protection"
+      ],
+      "matched_keywords": [
+        "no",
+        "not",
+        "data protection"
+      ],
+      "faithfulness_score": 0.6,
+      "is_abstention_case": true,
+      "system_abstained": true,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "MEDIUM",
+      "predicted_risk_level": "MEDIUM",
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.01059999999597494,
+      "total_latency_ms": 0.2784999999221327,
+      "prompt_tokens": 226,
+      "completion_tokens": 40,
+      "total_tokens": 266
+    },
+    {
+      "test_id": "MISS-005",
+      "contract_id": "eval_delta_epsilon_003",
+      "question": "Does the employment bond have an automatic renewal clause?",
+      "config_name": "improved",
+      "answer_text": "The agreement does not contain provisions concerning automatic renewal or this topic. No automatic renewal clause exists. The bond covers a fixed lock-in period.",
+      "evidence_status": "INSUFFICIENT",
+      "expected_evidence_status": "INSUFFICIENT",
+      "total_citations": 0,
+      "valid_citations": 0,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "no",
+        "absent",
+        "not",
+        "renewal"
+      ],
+      "matched_keywords": [
+        "no",
+        "not",
+        "renewal"
+      ],
+      "faithfulness_score": 0.75,
+      "is_abstention_case": true,
+      "system_abstained": true,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "LOW",
+      "predicted_risk_level": "LOW",
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.014299999975264654,
+      "total_latency_ms": 0.45290000002751185,
+      "prompt_tokens": 368,
+      "completion_tokens": 40,
+      "total_tokens": 408
+    },
+    {
+      "test_id": "CONF-001",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "What is the termination notice period in the supply agreement?",
+      "config_name": "improved",
+      "answer_text": "Conflicting provisions identified: Conflicting provisions: Section 7.1 requires 30 days notice; Section 12.1 (amendment) requires 180 days.. Evidence:  Overdue Amounts. Overdue amounts accrue interest at 3% per annum\nabove the Bank of England base rate.\n\nSection 12 \u2014 Exit Provisions\nNOTICE: THE FOLLOWING EXIT PROVISIONS WERE ADDED BY AMENDMENT AND\nSUPPLEMENT SECTION 7.\n12.1 Termination Notice Period. Notwithstanding Section 7.1...  arbitration under the LCIA Rules in London.\n\nSection 14 \u2014 Entire Agreement\nThis Agreement, as amended, constitutes the entire agreement between the parties.\n\nIN WITNESS WHEREOF:\n\nGreenLeaf Organics PLC               TerraCo Agricultural Supplies Ltd.\nBy: ___________________     ...",
+      "evidence_status": "CONFLICTING",
+      "expected_evidence_status": "CONFLICTING",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "thirty",
+        "30",
+        "one hundred and eighty",
+        "180",
+        "conflict"
+      ],
+      "matched_keywords": [
+        "30",
+        "180",
+        "conflict"
+      ],
+      "faithfulness_score": 0.6,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": true,
+      "system_detected_conflict": true,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "HIGH",
+      "predicted_risk_level": "LOW",
+      "risk_level_correct": false,
+      "generation_latency_ms": 0.025299999833805487,
+      "total_latency_ms": 0.3435999999510386,
+      "prompt_tokens": 369,
+      "completion_tokens": 179,
+      "total_tokens": 548
+    },
+    {
+      "test_id": "CONF-002",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "How many days does the buyer have to pay invoices in the supply agreement?",
+      "config_name": "improved",
+      "answer_text": "Conflicting provisions identified: Conflicting: Net 45 standard (Section 4.1) vs. Net 90 for orders over \u00a350,000 (Section 11.1 amendment).. Evidence: SUPPLY AGREEMENT\n\nThis Supply Agreement (\"Agreement\") is made on August 20, 2025,\nBETWEEN: GreenLeaf Organics PLC, registered in England (\"Buyer\"),\nAND: TerraCo Agricultural Supplies Ltd., registered in Wales (\"Supplier\").\n\nSection 1 \u2014 Supply Obligations\nSupplier shall deliver or...  arbitration under the LCIA Rules in London.\n\nSection 14 \u2014 Entire Agreement\nThis Agreement, as amended, constitutes the entire agreement between the parties.\n\nIN WITNESS WHEREOF:\n\nGreenLeaf Organics PLC               TerraCo Agricultural Supplies Ltd.\nBy: ___________________     ...",
+      "evidence_status": "CONFLICTING",
+      "expected_evidence_status": "CONFLICTING",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "forty-five",
+        "45",
+        "ninety",
+        "90"
+      ],
+      "matched_keywords": [
+        "45",
+        "90"
+      ],
+      "faithfulness_score": 0.5,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": true,
+      "system_detected_conflict": true,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "MEDIUM",
+      "predicted_risk_level": "MEDIUM",
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.025000000050567905,
+      "total_latency_ms": 0.4946999999901891,
+      "prompt_tokens": 372,
+      "completion_tokens": 179,
+      "total_tokens": 551
+    },
+    {
+      "test_id": "CONF-003",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "Are there any conflicting provisions in the GreenLeaf\u2013TerraCo agreement?",
+      "config_name": "improved",
+      "answer_text": "Conflicting provisions identified: Yes. Sections 11 and 12 (amendments) create conflicts with Sections 4 and 7 on payment and termination terms.. Evidence:  Overdue Amounts. Overdue amounts accrue interest at 3% per annum\nabove the Bank of England base rate.\n\nSection 12 \u2014 Exit Provisions\nNOTICE: THE FOLLOWING EXIT PROVISIONS WERE ADDED BY AMENDMENT AND\nSUPPLEMENT SECTION 7.\n12.1 Termination Notice Period. Notwithstanding Section 7.1...  arbitration under the LCIA Rules in London.\n\nSection 14 \u2014 Entire Agreement\nThis Agreement, as amended, constitutes the entire agreement between the parties.\n\nIN WITNESS WHEREOF:\n\nGreenLeaf Organics PLC               TerraCo Agricultural Supplies Ltd.\nBy: ___________________     ...",
+      "evidence_status": "CONFLICTING",
+      "expected_evidence_status": "CONFLICTING",
+      "total_citations": 4,
+      "valid_citations": 4,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "conflict",
+        "amendment",
+        "notwithstanding"
+      ],
+      "matched_keywords": [
+        "conflict",
+        "amendment",
+        "notwithstanding"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": true,
+      "system_detected_conflict": true,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "HIGH",
+      "predicted_risk_level": "LOW",
+      "risk_level_correct": false,
+      "generation_latency_ms": 0.025000000050567905,
+      "total_latency_ms": 0.4386000000522472,
+      "prompt_tokens": 301,
+      "completion_tokens": 180,
+      "total_tokens": 481
+    },
+    {
+      "test_id": "CONF-004",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "Can the Buyer terminate the supply agreement with just 30 days notice?",
+      "config_name": "improved",
+      "answer_text": "Conflicting provisions identified: Unclear. Section 7.1 says 30 days, but the later amendment Section 12.1 says 180 days.. Evidence: SUPPLY AGREEMENT\n\nThis Supply Agreement (\"Agreement\") is made on August 20, 2025,\nBETWEEN: GreenLeaf Organics PLC, registered in England (\"Buyer\"),\nAND: TerraCo Agricultural Supplies Ltd., registered in Wales (\"Supplier\").\n\nSection 1 \u2014 Supply Obligations\nSupplier shall deliver or...  arbitration under the LCIA Rules in London.\n\nSection 14 \u2014 Entire Agreement\nThis Agreement, as amended, constitutes the entire agreement between the parties.\n\nIN WITNESS WHEREOF:\n\nGreenLeaf Organics PLC               TerraCo Agricultural Supplies Ltd.\nBy: ___________________     ...",
+      "evidence_status": "CONFLICTING",
+      "expected_evidence_status": "CONFLICTING",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "30",
+        "180",
+        "conflict",
+        "amendment"
+      ],
+      "matched_keywords": [
+        "30",
+        "180",
+        "conflict",
+        "amendment"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": true,
+      "system_detected_conflict": true,
+      "conflict_detection_correct": true,
+      "expected_risk_level": "HIGH",
+      "predicted_risk_level": "HIGH",
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.028400000019246363,
+      "total_latency_ms": 0.5481000000600034,
+      "prompt_tokens": 371,
+      "completion_tokens": 175,
+      "total_tokens": 546
+    },
+    {
+      "test_id": "CONF-005",
+      "contract_id": "eval_greenleaf_terra_004",
+      "question": "What payment timeline applies to large orders over \u00a350,000?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Net 90 for orders exceeding \u00a350,000 per Section 11.1 (amendment), superseding the standard Net 45. - urchase Order. Late deliveries exceeding ten (10) business\ndays entitle Buyer to cancel the relevant Purchase Order.\n\nSection 4 \u2014 Payment\n4.1 Payment Terms. Buyer shall pay all undisputed invoices within forty-five (45) days\nof receipt of goods and a valid invoice (\"Net 45\").\n4.2...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 1,
+      "valid_citations": 1,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "ninety",
+        "90",
+        "Net 90"
+      ],
+      "matched_keywords": [
+        "90",
+        "Net 90"
+      ],
+      "faithfulness_score": 0.6666666666666666,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.014899999996487168,
+      "total_latency_ms": 0.31420000004800386,
+      "prompt_tokens": 85,
+      "completion_tokens": 103,
+      "total_tokens": 188
+    },
+    {
+      "test_id": "UNSUP-001",
+      "contract_id": "eval_acme_beta_001",
+      "question": "What is the weather forecast for tomorrow in Delaware?",
+      "config_name": "improved",
+      "answer_text": "The agreement does not contain provisions concerning unsupported or this topic. This question is outside the scope of the contract and cannot be answered from the agreement.",
+      "evidence_status": "INSUFFICIENT",
+      "expected_evidence_status": "INSUFFICIENT",
+      "total_citations": 0,
+      "valid_citations": 0,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "not",
+        "contract",
+        "cannot",
+        "outside"
+      ],
+      "matched_keywords": [
+        "not",
+        "contract",
+        "cannot",
+        "outside"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": true,
+      "system_abstained": true,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.015100000155143789,
+      "total_latency_ms": 0.31840000019656145,
+      "prompt_tokens": 367,
+      "completion_tokens": 43,
+      "total_tokens": 410
+    },
+    {
+      "test_id": "UNSUP-002",
+      "contract_id": "eval_acme_beta_001",
+      "question": "What was ACME Corporation's stock price last quarter?",
+      "config_name": "improved",
+      "answer_text": "The agreement does not contain provisions concerning unsupported or this topic. Stock price information is not available in the contract.",
+      "evidence_status": "INSUFFICIENT",
+      "expected_evidence_status": "INSUFFICIENT",
+      "total_citations": 0,
+      "valid_citations": 0,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "not",
+        "contract",
+        "cannot",
+        "insufficient"
+      ],
+      "matched_keywords": [
+        "not",
+        "contract"
+      ],
+      "faithfulness_score": 0.5,
+      "is_abstention_case": true,
+      "system_abstained": true,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.009900000122797792,
+      "total_latency_ms": 0.27880000016011763,
+      "prompt_tokens": 13,
+      "completion_tokens": 34,
+      "total_tokens": 47
+    },
+    {
+      "test_id": "UNSUP-003",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Please draft a counter-proposal for Section 8 termination rights.",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: The system can reference Section 8 content but counter-proposals require professional legal drafting. -  performed in a professional manner consistent\nwith generally accepted industry standards.\n\nSection 8 \u2014 Termination\n8.1 Termination for Convenience. Either party may terminate this Agreement for\nconvenience upon ninety (90) days prior written notice to the other party.\n8.2 Termin... - .3 Late Payment. Overdue undisputed amounts shall accrue interest at the lesser of\none and one-half percent (1.5%) per month or the maximum rate permitted by law.\n5.4 Disputed Invoices. Client shall notify Provider of any disputed invoice line items\nwithin fifteen (15) days of re...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 3,
+      "valid_citations": 3,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "Section 8",
+        "terminat"
+      ],
+      "matched_keywords": [
+        "Section 8",
+        "terminat"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.023199999986900366,
+      "total_latency_ms": 0.555800000029194,
+      "prompt_tokens": 228,
+      "completion_tokens": 175,
+      "total_tokens": 403
+    },
+    {
+      "test_id": "UNSUP-004",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Who is the CEO of BetaCorp Solutions?",
+      "config_name": "improved",
+      "answer_text": "Based on contract evidence: Raj Patel, Managing Director, signed the agreement for BetaCorp Solutions LLC. - al term is twenty-four (24) months from the Effective Date.\n3.2 Renewal. This Agreement shall automatically renew for successive twelve (12)\nmonth periods unless either party provides written notice of non-renewal at least\nsixty (60) days prior to the expiration of the then-curre... - MASTER SERVICES AGREEMENT\n\nThis Master Services Agreement (\"Agreement\") is entered into as of January 15, 2025,\nby and between ACME Corporation, a Delaware corporation (\"Client\"),\nand BetaCorp Solutions LLC, a California limited liability company (\"Provider\").\n\nSection 1 \u2014 Scope ...",
+      "evidence_status": "SUFFICIENT",
+      "expected_evidence_status": "SUFFICIENT",
+      "total_citations": 5,
+      "valid_citations": 5,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "Raj Patel",
+        "Managing Director"
+      ],
+      "matched_keywords": [
+        "Raj Patel",
+        "Managing Director"
+      ],
+      "faithfulness_score": 1.0,
+      "is_abstention_case": false,
+      "system_abstained": false,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.0227999998969608,
+      "total_latency_ms": 0.36399999999048305,
+      "prompt_tokens": 363,
+      "completion_tokens": 169,
+      "total_tokens": 532
+    },
+    {
+      "test_id": "UNSUP-005",
+      "contract_id": "eval_acme_beta_001",
+      "question": "Explain quantum computing and how it relates to this contract.",
+      "config_name": "improved",
+      "answer_text": "The agreement does not contain provisions concerning unsupported or this topic. Quantum computing is not referenced or relevant to this agreement.",
+      "evidence_status": "INSUFFICIENT",
+      "expected_evidence_status": "INSUFFICIENT",
+      "total_citations": 0,
+      "valid_citations": 0,
+      "citation_validity_score": 1.0,
+      "expected_keywords": [
+        "not",
+        "contract",
+        "insufficient",
+        "quantum"
+      ],
+      "matched_keywords": [
+        "not",
+        "quantum"
+      ],
+      "faithfulness_score": 0.5,
+      "is_abstention_case": true,
+      "system_abstained": true,
+      "abstention_correct": true,
+      "is_conflict_case": false,
+      "system_detected_conflict": false,
+      "conflict_detection_correct": true,
+      "expected_risk_level": null,
+      "predicted_risk_level": null,
+      "risk_level_correct": true,
+      "generation_latency_ms": 0.01420000012331002,
+      "total_latency_ms": 0.35840000009557116,
+      "prompt_tokens": 298,
+      "completion_tokens": 36,
+      "total_tokens": 334
+    }
+  ]
+}
